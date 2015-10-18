@@ -1,0 +1,1 @@
+python func_test.py  -l --address=localhost:5000 > /home/dmitri/DB/subd-api/func_res

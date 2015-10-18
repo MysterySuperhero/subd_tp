@@ -1,0 +1,812 @@
+Testing localhost:5000
+info: Testing started for: localhost:5000
+
+info: Clear all
+
+info: Let there be users.
+
+info: Requesting http://localhost:5000/db/api/user/create/ with {'username': 'user1', 'about': 'hello im user1', 'isAnonymous': False, 'name': 'John', 'email': 'example@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/user/create/ with {'username': None, 'about': None, 'isAnonymous': True, 'name': None, 'email': 'richard.nixon@example.com'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'richard.nixon@example.com'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=richard.nixon%40example.com return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/user/create/ with {'username': 'user2', 'about': 'hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2', 'isAnonymous': False, 'name': 'Jey', 'email': 'example2@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example2@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example2%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/user/create/ with {'username': 'user3', 'about': 'hello im user3', 'isAnonymous': False, 'name': 'Josh', 'email': 'example3@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example3%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/user/create/ with {'username': 'user4', 'about': 'hello im user4', 'isAnonymous': False, 'name': 'Jim', 'email': 'example4@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example4@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example4%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Let there be content
+
+info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': 'Forum With Sufficiently Large Name', 'short_name': 'forumwithsufficientlylargename', 'user': 'richard.nixon@example.com'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/forum/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/forum/details/ with {'related': ['user'], 'forum': 'forumwithsufficientlylargename'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/forum/details/?forum=forumwithsufficientlylargename&related=user return code not 2xx: 404
+
+error: Attribute <user> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': 'Forum I', 'short_name': 'forum1', 'user': 'example2@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/forum/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/forum/details/ with {'related': ['user'], 'forum': 'forum1'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/forum/details/?forum=forum1&related=user return code not 2xx: 404
+
+error: Attribute <user> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': 'Forum II', 'short_name': 'forum2', 'user': 'richard.nixon@example.com'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/forum/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/forum/details/ with {'related': ['user'], 'forum': 'forum2'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/forum/details/?forum=forum2&related=user return code not 2xx: 404
+
+error: Attribute <user> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': u'\u0424\u043e\u0440\u0443\u043c \u0422\u0440\u0438', 'short_name': 'forum3', 'user': 'example2@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/forum/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/forum/details/ with {'related': ['user'], 'forum': 'forum3'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/forum/details/?forum=forum3&related=user return code not 2xx: 404
+
+error: Attribute <user> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forum3', 'title': 'Thread With Sufficiently Large Title', 'isClosed': True, 'user': 'example@mail.ru', 'date': '2014-01-01 00:00:01', 'message': 'hey hey hey hey!', 'slug': 'Threadwithsufficientlylargetitle', 'isDeleted': True} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['forum', 'user'], 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1&related=forum&related=user return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forum1', 'title': 'Thread I', 'isClosed': False, 'user': 'example2@mail.ru', 'date': '2013-12-31 00:01:01', 'message': 'hey!', 'slug': 'thread1', 'isDeleted': False} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['forum', 'user'], 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1&related=forum&related=user return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forum3', 'title': 'Thread II', 'isClosed': False, 'user': 'example@mail.ru', 'date': '2013-12-30 00:01:01', 'message': 'hey hey!', 'slug': 'thread2', 'isDeleted': False} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['forum', 'user'], 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1&related=forum&related=user return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forum2', 'title': u'\u0422\u0440\u0435\u0434 \u0422\u0440\u0438', 'isClosed': False, 'user': 'example3@mail.ru', 'date': '2013-12-29 00:01:01', 'message': 'hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! ', 'slug': 'thread3', 'isDeleted': False} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['forum', 'user'], 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1&related=forum&related=user return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/post/create/ with {'isApproved': True, 'user': 'example@mail.ru', 'date': '2014-01-01 00:00:01', 'message': 'my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1', 'isSpam': False, 'isHighlighted': True, 'thread': -1, 'forum': 'forum2', 'isDeleted': False, 'isEdited': True} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/post/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -1, 'related': ['thread', 'forum', 'user']} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-1&related=thread&related=forum&related=user return code not 2xx: 404
+
+error: Attribute <isHighlighted> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/post/create/ with {'parent': -1, 'isApproved': False, 'user': 'richard.nixon@example.com', 'date': '2014-01-01 00:02:01', 'message': 'my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3', 'isSpam': False, 'isHighlighted': False, 'forum': 'forum2', 'thread': -1, 'isDeleted': False, 'isEdited': True} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/post/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -1, 'related': ['thread', 'forum', 'user']} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-1&related=thread&related=forum&related=user return code not 2xx: 404
+
+error: Attribute <parent> from API response (value=None) dont match test object (value=-1)
+
+info: Requesting http://localhost:5000/db/api/post/create/ with {'forum': 'forum2', 'thread': -1, 'parent': -1, 'isApproved': False, 'isDeleted': False, 'isEdited': True, 'date': '2014-01-02 00:02:01', 'message': 'my message 1', 'isSpam': True, 'isHighlighted': False, 'user': 'example2@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/post/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -1, 'related': ['thread', 'forum', 'user']} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-1&related=thread&related=forum&related=user return code not 2xx: 404
+
+error: Attribute <parent> from API response (value=None) dont match test object (value=-1)
+
+info: Requesting http://localhost:5000/db/api/post/create/ with {'forum': 'forum2', 'thread': -1, 'isApproved': True, 'isDeleted': False, 'isEdited': False, 'date': '2014-01-03 00:01:01', 'message': 'my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1', 'isSpam': False, 'isHighlighted': False, 'user': 'richard.nixon@example.com'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/post/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -1, 'related': ['thread', 'forum', 'user']} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-1&related=thread&related=forum&related=user return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/post/create/ with {'forum': 'forum2', 'thread': -1, 'isApproved': False, 'isDeleted': False, 'isEdited': False, 'date': '2014-01-03 00:08:01', 'message': 'my message 1', 'isSpam': False, 'isHighlighted': False, 'user': 'richard.nixon@example.com'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/post/create/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -1, 'related': ['thread', 'forum', 'user']} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-1&related=thread&related=forum&related=user return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -42} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-42 return code not 2xx: 404
+
+error: Get nonexisting post response code was None instead 1
+
+info: Requesting http://localhost:5000/db/api/user/create/ with {'username': None, 'about': None, 'isAnonymous': True, 'name': None, 'email': 'richard.nixon@example.com'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/create/ return code not 2xx: 404
+
+error: Create existing user response code was None instead 5
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['user', 'thread'], 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1&related=user&related=thread return code not 2xx: 404
+
+error: Incorrect request response code was None instead 3
+
+info: List posts
+
+info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'forum': 'forumwithsufficientlylargename'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/list/?since=2014-01-02+00%3A00%3A00&limit=2&order=asc&forum=forumwithsufficientlylargename return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'forum': 'forum1'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/list/?since=2014-01-01+00%3A00%3A00&order=desc&forum=forum1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/list/?since=2014-01-01+00%3A00%3A00&order=desc&thread=-1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'order': 'desc', 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/list/?since=2014-01-03+00%3A00%3A00&limit=3&order=desc&thread=-1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Remove post
+
+info: Requesting http://localhost:5000/db/api/post/remove/ with {'post': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/post/remove/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Restore post
+
+info: Requesting http://localhost:5000/db/api/post/restore/ with {'post': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/post/restore/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Update post
+
+info: Requesting http://localhost:5000/db/api/post/update/ with {'post': -1, 'message': 'my message 1'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/post/update/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Likes time!!!
+
+info: Requesting http://localhost:5000/db/api/post/vote/ with {'vote': -1, 'post': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/post/vote/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/post/details/?post=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: List some threads
+
+info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'forum': 'forumwithsufficientlylargename'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/list/?since=2014-01-02+00%3A00%3A00&limit=2&order=asc&forum=forumwithsufficientlylargename return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'forum': 'forum1'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/list/?since=2014-01-01+00%3A00%3A00&order=desc&forum=forum1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-01 00:00:00', 'user': 'example2@mail.ru', 'order': 'desc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/list/?since=2014-01-01+00%3A00%3A00&user=example2%40mail.ru&order=desc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'user': 'example3@mail.ru', 'order': 'desc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/list/?since=2014-01-03+00%3A00%3A00&limit=3&user=example3%40mail.ru&order=desc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: And list posts in them
+
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/listPosts/?since=2014-01-02+00%3A00%3A00&limit=2&order=asc&thread=-1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/listPosts/?since=2014-01-01+00%3A00%3A00&order=desc&thread=-1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/listPosts/?since=2014-01-01+00%3A00%3A00&order=desc&thread=-1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'order': 'desc', 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/listPosts/?since=2014-01-03+00%3A00%3A00&limit=3&order=desc&thread=-1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Go away thread!
+
+info: Requesting http://localhost:5000/db/api/thread/remove/ with {'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/remove/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'order': 'desc', 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/listPosts/?order=desc&thread=-1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Alright, I forgive you, come back
+
+info: Requesting http://localhost:5000/db/api/thread/restore/ with {'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/restore/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'order': 'desc', 'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/listPosts/?order=desc&thread=-1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Changed my mind again, goodbye!
+
+info: Requesting http://localhost:5000/db/api/thread/close/ with {'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/close/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: But I cant live without you
+
+info: Requesting http://localhost:5000/db/api/thread/open/ with {'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/open/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Update post
+
+info: Requesting http://localhost:5000/db/api/thread/update/ with {'message': 'hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! ', 'slug': 'newslug', 'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/update/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Likes time...again!
+
+info: Requesting http://localhost:5000/db/api/thread/vote/ with {'vote': 1, 'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/vote/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Subscribe me
+
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example4@mail.ru', 'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/subscribe/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'richard.nixon@example.com', 'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/subscribe/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example@mail.ru', 'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/subscribe/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example4@mail.ru', 'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/subscribe/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example2@mail.ru', 'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/subscribe/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: Unsubscribe me
+
+info: Requesting http://localhost:5000/db/api/thread/unsubscribe/ with {'user': 'example4@mail.ru', 'thread': -1} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/thread/unsubscribe/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': -1} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/thread/details/?thread=-1 return code not 2xx: 404
+
+error: Attribute <forum> missing in response from API: None
+
+info: OMG, I was soooooo wasted...what did I wrote yesterday?
+
+info: Requesting http://localhost:5000/db/api/user/listPosts/ with {'since': '2014-01-02 00:00:00', 'limit': 2, 'user': 'example@mail.ru', 'order': 'asc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/listPosts/?since=2014-01-02+00%3A00%3A00&limit=2&user=example%40mail.ru&order=asc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/user/listPosts/ with {'since': '2014-01-01 00:00:00', 'user': 'richard.nixon@example.com', 'order': 'desc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/listPosts/?since=2014-01-01+00%3A00%3A00&user=richard.nixon%40example.com&order=desc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Requesting http://localhost:5000/db/api/user/listPosts/ with {'since': '2014-01-01 00:00:00', 'user': 'example2@mail.ru', 'order': 'asc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/listPosts/?since=2014-01-01+00%3A00%3A00&user=example2%40mail.ru&order=asc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/user/listPosts/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'user': 'example3@mail.ru', 'order': 'desc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/listPosts/?since=2014-01-03+00%3A00%3A00&limit=3&user=example3%40mail.ru&order=desc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: It was huge mistake. Need to change a nick quickly
+
+info: Requesting http://localhost:5000/db/api/user/updateProfile/ with {'about': 'Wowowowow', 'user': 'example2@mail.ru', 'name': 'NewName'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/updateProfile/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example2@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example2%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/user/updateProfile/ with {'about': 'Wowowowow!!!', 'user': 'example3@mail.ru', 'name': 'NewName2'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/updateProfile/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example3%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Follow someone
+
+info: Requesting http://localhost:5000/db/api/user/follow/ with {'follower': 'example3@mail.ru', 'followee': 'example@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/follow/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example3%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/user/follow/ with {'follower': 'example@mail.ru', 'followee': 'example3@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/follow/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example3%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: List followers
+
+info: Requesting http://localhost:5000/db/api/user/listFollowers/ with {'limit': 3, 'user': 'example3@mail.ru', 'since_id': 0, 'order': 'desc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/listFollowers/?limit=3&user=example3%40mail.ru&since_id=0&order=desc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/user/listFollowers/ with {'user': 'example@mail.ru', 'order': 'asc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/listFollowers/?user=example%40mail.ru&order=asc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: List following
+
+info: Requesting http://localhost:5000/db/api/user/listFollowing/ with {'limit': 3, 'user': 'example3@mail.ru', 'since_id': 1, 'order': 'desc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/listFollowing/?limit=3&user=example3%40mail.ru&since_id=1&order=desc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/user/listFollowing/ with {'user': 'example@mail.ru', 'order': 'asc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/listFollowing/?user=example%40mail.ru&order=asc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 1
+
+info: Unfollow someone
+
+info: Requesting http://localhost:5000/db/api/user/unfollow/ with {'follower': 'example3@mail.ru', 'followee': 'example@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/unfollow/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example3%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Requesting http://localhost:5000/db/api/user/unfollow/ with {'follower': 'example@mail.ru', 'followee': 'example3@mail.ru'} (POST)
+
+error: Request error: Request http://localhost:5000/db/api/user/unfollow/ return code not 2xx: 404
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/user/details/?user=example3%40mail.ru return code not 2xx: 404
+
+error: Attribute <username> missing in response from API: None
+
+info: List forum posts
+
+info: Requesting http://localhost:5000/db/api/forum/listPosts/ with {'related': ['thread'], 'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'forum': 'forumwithsufficientlylargename'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/forum/listPosts/?forum=forumwithsufficientlylargename&since=2014-01-02+00%3A00%3A00&limit=2&order=asc&related=thread return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: List forum threads
+
+info: Requesting http://localhost:5000/db/api/forum/listThreads/ with {'related': ['forum', 'user'], 'since': '2013-12-30 00:00:00', 'limit': 2, 'order': 'asc', 'forum': 'forumwithsufficientlylargename'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/forum/listThreads/?forum=forumwithsufficientlylargename&since=2013-12-30+00%3A00%3A00&limit=2&order=asc&related=forum&related=user return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: List forum users
+
+info: Requesting http://localhost:5000/db/api/forum/listUsers/ with {'limit': 2, 'since_id': 2, 'forum': 'forumwithsufficientlylargename', 'order': 'asc'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/forum/listUsers/?limit=2&forum=forumwithsufficientlylargename&since_id=2&order=asc return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/forum/listUsers/ with {'order': 'desc', 'forum': 'forum1'} (GET)
+
+error: Request error: Request http://localhost:5000/db/api/forum/listUsers/?order=desc&forum=forum1 return code not 2xx: 404
+
+info: Validating by requesting list of objects
+
+{'clear': True,
+ 'errors': False,
+ 'forum/create': False,
+ 'forum/listPosts': False,
+ 'forum/listThreads': False,
+ 'forum/listUsers': False,
+ 'post/create': False,
+ 'post/list': False,
+ 'post/remove': False,
+ 'post/restore': False,
+ 'post/update': False,
+ 'post/vote': False,
+ 'thread/close': False,
+ 'thread/create': False,
+ 'thread/list': False,
+ 'thread/listPosts': False,
+ 'thread/open': False,
+ 'thread/remove': False,
+ 'thread/restore': False,
+ 'thread/subscribe': False,
+ 'thread/unsubscribe': False,
+ 'thread/update': False,
+ 'thread/vote': False,
+ 'user/create': False,
+ 'user/follow': False,
+ 'user/listFollowers': False,
+ 'user/listFollowing': False,
+ 'user/listPosts': False,
+ 'user/unfollow': False,
+ 'user/updateProfile': False}
+1/30 tests passed
