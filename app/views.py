@@ -28,7 +28,27 @@ def clear():
 		dbConnector.execute(con,"TRUNCATE TABLE %s;" % table)
 	dbConnector.execute(con,"SET global foreign_key_checks = 1;")
 	con.close()
-	print "azaza"
 	return jsonify({"code" : STATUS_CODE['OK'], "response" : 'OK' })
 
+@app.route('/db/api/status/', methods=['GET'])
+def status():
 
+	con = connect();
+	response = [];
+	tables = ['user', 'thread', 'forum', 'post'];
+	
+	for table in tables:
+		currCount = len(dbConnector.select_query(con, 'SELECT id FROM ' + table, ()))
+		response.append(currCount)
+	
+	statusResponse = {
+		'user'   : response[0],
+		'thread' : response[1],
+		'forum'  : response[2],
+		'post'   : response[3]
+	}
+
+	con.close()
+	
+	stat = statusResponse
+	return jsonify({"code" : STATUS_CODE['OK'], "response" : stat })

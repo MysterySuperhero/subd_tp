@@ -10,9 +10,8 @@ def connect():
                       charset=DB_CHARSET)
 
 
-def update_query(query, params):
+def update_query(con, query, params):
     try:
-        con = connect()
         cursor = con.cursor()
         cursor.execute(query, params)
         inserted_id = cursor.lastrowid
@@ -27,7 +26,7 @@ def update_query(query, params):
 
 def select_query(query, params):
     try:
-        con = connect()
+        con = connec()
         cursor = con.cursor()
         cursor.execute(query, params)
         result = cursor.fetchall()
