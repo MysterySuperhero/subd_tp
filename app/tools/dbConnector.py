@@ -24,9 +24,8 @@ def update_query(con, query, params):
     return inserted_id
 
 
-def select_query(query, params):
+def select_query(con, query, params):
     try:
-        con = connec()
         cursor = con.cursor()
         cursor.execute(query, params)
         result = cursor.fetchall()

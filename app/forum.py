@@ -3,33 +3,39 @@ from flask import jsonify, request
 from constants import *
 from app.tools import forum
 from app.tools import dbConnector
+import urlparse
+from app.tools import helpers
+import json
 
 
-@app.route('/db/api/forum/create/', methods=['GET', 'POST'])
-def create():
+@app.route('/db/api/forum/create/', methods=['POST'])
+def create_forum():
 
 	con = dbConnector.connect();
 	params = request.json;
 
 	try:
-		check_params(params, ["name", "short_name", "user"])
+		helpers.check_params(params, ["name", "short_name", "user"])
 
-		response = forum.create_forum(con, name, short_name, user);
+		response = forum.forum(con, name, short_name, user);
 
 	except Exception as e:
 		con.close();
-		return jsonify({"code": 3, "response": (e.message)})
+		return json.dumps({"code": 3, "response": (e.message)})
+	
+	con.close();
+	return json.dumps({"code": 0, "response": response});
 
-	return jsonify({"code": 0, "response": response});
 
-def check_params(params, required_params):
-	for required_param in required_params:
-		if required_param not in params:
-			raise Exception("missing " + required_param)
-		if params[required_param] is not None:
-			try:
-				params[required_param] = params[required_param].encode('utf-8')
-			except Exception:
-				continue
-		return
-
+@app.route('/db/api/forum/details/', methods=['GET'])
+def forum_details():
+	con = dbConnector.connect();
+	params = helpers.json_from_get(request)
+	try:
+		helpers.check_params(params, ["forum"])
+		response = forum.details(con, params["forum"], helpers.related_exists(params))
+	except Exception, e:
+		con.close;
+		return json.dumps({"code": 3, "response": (e.message)})
+	con.close();
+	return json.dumps({"code": 0, "response": response});
