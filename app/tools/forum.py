@@ -26,9 +26,6 @@ def details(con, short_name, related):
 
 	forum = forum_description(forum)
 
-	print "___PARAMS___"
-	print forum
-
 	if "user" in related:
 		forum["user"] = user.details(con, forum["user"])
 	return forum

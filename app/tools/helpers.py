@@ -12,13 +12,13 @@ def check_params(params, required_params):
 				continue
 	return
 
-# def json_from_get(request):
-# 	parsed = urlparse.urlparse(request.url)
-# 	return urlparse.parse_qs(parsed.query)
-
 def json_from_get(request):
-	return dict((k, v if len(v) > 1 else v[0] )
-                    for k, v in urlparse.parse_qs(request.query_string).iteritems())
+	parsed = urlparse.urlparse(request.url)
+	return urlparse.parse_qs(parsed.query)
+
+# def json_from_get(request):
+# 	return dict((k, v if len(v) > 1 else v[0] )
+#                     for k, v in urlparse.parse_qs(request.query_string).iteritems())
 
 
 def related_exists(request):

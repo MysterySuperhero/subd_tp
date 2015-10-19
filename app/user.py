@@ -26,7 +26,7 @@ def create_user():
 		con.close()
 		return json.dumps({"code": 1, "response": (e.message)})
 	con.close()
-	return json.dumps({code: 0, "response": userr})
+	return json.dumps({"code": 0, "response": userr})
 
 
 @app.route('/db/api/user/details/', methods=['GET'])
