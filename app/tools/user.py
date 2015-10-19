@@ -6,20 +6,15 @@ def create(con, username, about, name, email, optional):
 	if "isAnonymous" in optional:
 		isAnonymous = optional["isAnonymous"]
 
-	print "_______UPDATE________"
 	user = dbConnector.update_query(
 		con, 
 		'INSERT INTO user (username, about, name, email, isAnonymous) VALUES (%s, %s, %s, %s, %s)', (username, about, name, email, isAnonymous, )
 	)
 
-	print "__AFTER UPDATE__"
-	print str(user)
-
 	if user == "Error":
 		raise Exception("5")
 
 	#check insertion
-	print "_______SELECT________"
 	user = dbConnector.select_query(
 		connect,
 		'SELECT email, about, isAnonymous, id, name, username FROM user WHERE email = %s',
@@ -59,6 +54,8 @@ def details(con, email):
 	)
 
 	user["subscriptions"] = to_list(subscriptions)
+
+	user["id"] = -1
 
 	return user
 

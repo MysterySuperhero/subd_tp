@@ -1,13 +1,16 @@
 from app.tools import dbConnector
 from app.tools import user
 
-def forum(con, name, short_name, user):
-	dbConnector.update_query(con, 
+def create(con, name, short_name, user):
+
+	dbConnector.update_query(
+		con, 
 		'INSERT INTO forum (name, short_name, user) VALUES (%s, %s, %s)', (name, short_name, user)
 	);
 
 	#check result of update query:
 	forum = dbConnector.select_query(
+		con,
 		'SELECT id, name, short_name, user FROM forum WHERE short_name = %s', (short_name, )
 	)
 
@@ -22,6 +25,9 @@ def details(con, short_name, related):
 		raise Exception("Forum " + short_name + " not found")
 
 	forum = forum_description(forum)
+
+	print "___PARAMS___"
+	print forum
 
 	if "user" in related:
 		forum["user"] = user.details(con, forum["user"])

@@ -18,7 +18,6 @@ def create_user():
 
 	try:
 		helpers.check_params(params, ["username", "about", "name", "email"])
-		print "_______CHECK________"
 		userr = user.create(con, params["username"], params["about"], params["name"], params["email"], optional)
 	except Exception as e:
 		if e.message == "5":

@@ -2,7 +2,7 @@ DB_HOST =     "localhost"
 DB_USER =     "root"
 DB_PASSWORD = "root"
 DB_NAME =     "forumdb"
-DB_CHARSET =  "utf8"
+DB_CHARSET =  "utf8mb4"
 
 STATUS_CODE = {
     'OK':              { 'status_code' : 0 },

@@ -15,9 +15,11 @@ def create_forum():
 	params = request.json;
 
 	try:
-		helpers.check_params(params, ["name", "short_name", "user"])
 
-		response = forum.forum(con, name, short_name, user);
+		helpers.check_params(params, ["name", "short_name", "user"])
+		print "___PARAMS___"
+		print params
+		response = forum.create(con, params["name"], params["short_name"], params["user"]);
 
 	except Exception as e:
 		con.close();
