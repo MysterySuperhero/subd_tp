@@ -14,7 +14,7 @@ def create_user():
 	con = dbConnector.connect()
 	params = request.json
 
-	optional = intersection(params, values=["isAnonymous"])
+	optional = helpers.get_optional_params(params, values=["isAnonymous"])
 
 	try:
 		helpers.check_params(params, ["username", "about", "name", "email"])
@@ -45,6 +45,3 @@ def user_details():
 	con.close()
 	return json.dumps({"code": 0, "response": userr})
 
-def intersection(request, values):
-	optional = dict([(k, request[k]) for k in set(values) if k in request])
-	return optional

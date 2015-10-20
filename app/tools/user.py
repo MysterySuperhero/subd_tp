@@ -14,17 +14,12 @@ def create(con, username, about, name, email, optional):
 	if user == "Error":
 		raise Exception("5")
 
-	print "__BEFORE___"
-	print (str(user))
 	#check insertion
 	user = dbConnector.select_query(
 		con,
 		'SELECT id, email, about, isAnonymous, name, username FROM user WHERE email = %s',
                            (email, )
 	)
-	print "__AFTER___"
-	print (str(user))
-	# user = user_description(user)
 
 	return user_description(user)
 
@@ -64,15 +59,7 @@ def details(con, email):
 
 def user_description(user):
 	user = user[0]
-	print "___USER___"
-	print(str(user))
 	response = {
-		# 'about': user[2],
-		# 'email': user[1],
-		# 'id': user[0],
-		# 'isAnonymous': bool(user[3]),
-		# 'name': user[4],
-		# 'username': user[5]
 		'about': user[2],
         'email': user[1],
         'id': user[0],
@@ -87,6 +74,4 @@ def to_list(a):
 	for i in a:
 		lst.append(i[0])
 	return lst
-# def user_followers(con, email):
-# 	followers = []
-# 	followers = 
+

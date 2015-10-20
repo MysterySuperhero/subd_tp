@@ -27,3 +27,7 @@ def related_exists(request):
 	except Exception:
 		related = []
 	return related
+
+def get_optional_params(request, values):
+	optional = dict([(k, request[k]) for k in set(values) if k in request])
+	return optional
