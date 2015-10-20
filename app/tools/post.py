@@ -1,5 +1,6 @@
 from app.tools import user, forum, thread
 from app.tools import dbConnector
+import unicodedata
 
 def create(con, date, thread, message, user, forum, optional):
 
@@ -33,8 +34,6 @@ def create(con, date, thread, message, user, forum, optional):
 	return post
 
 def details(con, details_id, related):
-
-    print details_id
     post = post_query(con, details_id)
     if post is None:
         raise Exception("no post with id = " + details_id)
@@ -50,19 +49,21 @@ def details(con, details_id, related):
 
 def posts_list(con, entity, params, identifier, related=[]):
     query = "SELECT date, dislikes, forum, id, isApproved, isDeleted, isEdited, isHighlighted, isSpam, likes, message, " \
-            "parent, points, thread, user FROM post WHERE " + entity + " = %s "
-
-    parameters = [identifier]
+            "parent, points, thread, user FROM post WHERE " + entity + " = " + '\'' + str(''.join(identifier)) + '\''
+    
+    parameters = tuple()
     if "since" in params:
         query += " AND date >= %s"
-        parameters.append(params["since"])
+        parameters += tuple(params["since"])
 
-    query += " ORDER BY date " + params["order"]
+    query += " ORDER BY date " + ''.join(params["order"])
 
     if "limit" in params:
-        query += " LIMIT " + str(params["limit"])
+        query += " LIMIT " + ''.join(params["limit"])
 
-    post_ids = dbConnector.select_query(con=con,query=query, params=parameters)
+    parameters += tuple('')
+    post_ids = dbConnector.select_query(con, query, parameters)
+
     post_list = []
     for post in post_ids:
         pf = {

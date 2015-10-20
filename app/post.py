@@ -51,11 +51,33 @@ def post_details():
     related = helpers.related_exists(params)
     try:
         helpers.check_params(params, required_data)
-        print "___PARAMS___"
-        print params["post"]
         response = post.details(con, params["post"], related)
     except Exception as e:
         con.close()
         return json.dumps({"code": 1, "response": (e.message)})
     con.close()
     return json.dumps({"code": 0, "response": response})
+
+@app.route("/db/api/post/list/", methods=["GET"])
+def post_list():
+    con = dbConnector.connect()
+    content = helpers.json_from_get(request)
+    try:
+        identifier = content["forum"]
+        entity = "forum"
+    except KeyError:
+        try:
+            identifier = content["thread"]
+            entity = "thread"
+        except Exception as e:
+            con.close()
+            return json.dumps({"code": 1, "response": (e.message)})
+
+    optional = helpers.get_optional_params(request=content, values=["limit", "order", "since"])
+    try:
+        p_list = post.posts_list(con=con,entity=entity, params=optional, identifier=identifier, related=[])
+    except Exception as e:
+        con.close()
+        return json.dumps({"code": 1, "response": (e.message)})
+    con.close()
+    return json.dumps({"code": 0, "response": p_list})

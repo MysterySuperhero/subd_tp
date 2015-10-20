@@ -1,7 +1,7 @@
 from app import app
 from flask import jsonify, request
 from constants import *
-from app.tools import forum
+from app.tools import forum, post
 from app.tools import dbConnector
 import urlparse
 from app.tools import helpers
@@ -44,8 +44,6 @@ def forum_details():
 def forum_list_posts():
 	con = dbConnector.connect()
 	params = helpers.json_from_get(request)
-	print "_______"
-	print params
 	optional = helpers.get_optional_params(
 		params,
 		["since",
@@ -53,8 +51,6 @@ def forum_list_posts():
 		"order"]
 	)
 	related = helpers.related_exists(params)
-	print optional
-	print related
 	try:
 		helpers.check_params(params, ["forum"])
 		response = post.posts_list(con, entity = "forum", params=optional, identifier=params["forum"], related=related)

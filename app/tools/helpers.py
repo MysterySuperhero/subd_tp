@@ -7,7 +7,7 @@ def check_params(params, required_params):
 			raise Exception("missing " + required_param)
 		if params[required_param] is not None:
 			try:
-				params[required_param] = params[required_param].encode('utf-8')
+				params[required_param] = params[required_param].encode('utf-8mb4')
 			except Exception:
 				continue
 	return

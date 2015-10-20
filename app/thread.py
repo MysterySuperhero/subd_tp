@@ -29,7 +29,7 @@ def create_thread():
 	return json.dumps({"code": 0, "response": response});
 
 @app.route("/db/api/thread/details/", methods=["GET"])
-def details():
+def details_thread():
 
     con = dbConnector.connect()
     params = helpers.json_from_get(request)
@@ -48,6 +48,138 @@ def details():
     con.close()
     return json.dumps({"code": 0, "response": response})
 
-# def get_optional_params(request, values):
-# 	optional = dict([(k, request[k]) for k in set(values) if k in request])
-# 	return optional
+@app.route("/db/api/thread/vote/", methods=['POST'])
+def vote_thread():
+
+    con  = dbConnector.connect()
+    params = request.json
+
+    try:
+        helpers.check_params(params, ["vote", "thread"])
+        response = thread.vote(con=con, vote=params["vote"], thread=params["thread"])
+    except Exception as e:
+        con.close()
+        return json.dumps({"code":1, "response":(e.message)})
+    con.close()
+    return json.dumps({"code":1, "response":response})
+
+
+@app.route("/db/api/thread/update/", methods=['POST'])
+def update_thread():
+
+    con = dbConnector.connect()
+
+    params = request.json
+
+    try:
+        helpers.check_params(params, ["message", "slug", "thread"])
+        response = thread.update(con=con, message=params["message"], slug=params["slug"], thread=params["thread"])
+    except Exception as e:
+        con.close()
+        return json.dumps({"code":1, "response": (e.message)})
+
+    return json.dumps({"code": 0, "response": response})
+
+@app.route("/db/api/thread/subscribe/", methods=['POST'])
+def subscribe_thread():
+
+    con = dbConnector.connect()
+
+    params = request.json
+
+    try:
+        helpers.check_params(params, ["user", "thread"])
+        response = thread.subscribe(con=con, user=params["user"], thread=params["thread"])
+    except Exception, e:
+        con.close()
+        return json.dumps({"code": 1, "response":(e.message)})
+    
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+
+@app.route("/db/api/thread/unsubscribe/", methods=['POST'])
+def unsubscribe_thread():
+    con = dbConnector.connect()
+
+    params = request.json
+
+    try:
+        helpers.check_params(params, ["user", "thread"])
+        response = thread.unsubscribe(con=con, user=params["user"], thread=params["thread"])
+    except Exception, e:
+        con.close()
+        return json.dumps({"code": 1, "response":(e.message)})
+    
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+
+@app.route("/db/api/thread/open/", methods=['POST'])
+def open_thread():
+
+    con = dbConnector.connect()
+
+    params = request.json
+
+    try:
+        helpers.check_params(params, ["thread"])
+        response = thread.open_close(con, params["thread"], isClosed=0)
+    except Exception as e:
+        con.close()
+        return ({"code": 1, "response": (e.message)})
+
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+
+@app.route("/db/api/thread/close/", methods=['GET','POST'])
+def close_thread():
+
+    con = dbConnector.connect()
+
+    params = request.json
+
+    try:
+        helpers.check_params(params, ["thread"])
+        response = thread.open_close(con, params["thread"], isClosed=1)
+    except Exception as e:
+        con.close()
+        return ({"code": 1, "response": (e.message)})
+        
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+@app.route("/db/api/thread/restore/", methods=['POST'])
+def restore_thread():
+
+    con = dbConnector.connect()
+
+    params = request.json
+
+    try:
+        helpers.check_params(params, ["thread"])
+        response = thread.restore_remove(con, params["thread"], isDeleted=0)
+    except Exception as e:
+        con.close()
+        return ({"code": 1, "response": (e.message)})
+
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+@app.route("/db/api/thread/remove/", methods=['GET','POST'])
+def remove_thread():
+
+    con = dbConnector.connect()
+
+    params = request.json
+
+    try:
+        helpers.check_params(params, ["thread"])
+        response = thread.restore_remove(con, params["thread"], isDeleted=1)
+    except Exception as e:
+        con.close()
+        return ({"code": 1, "response": (e.message)})
+
+    con.close()
+    return json.dumps({"code": 0, "response": response})
