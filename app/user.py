@@ -108,3 +108,21 @@ def user_listFollowers():
 		return json.dumps({"code": 1, "response": (e.message)})
 	con.close()
 	return json.dumps({"code": 0, "response": response})
+
+@app.route('/db/api/user/listFollowing/', methods=['GET'])
+def user_listFollowing():
+
+	con = dbConnector.connect()
+
+	params = helpers.json_from_get(request)
+
+	optional = helpers.get_optional_params(params, ["limit", "order", "since_id"])
+
+	try:
+		helpers.check_params(params, ["user"])
+		response = user.listFollowing(con, params["user"], optional)
+	except Exception as e:
+		con.close()
+		return json.dumps({"code": 1, "response": (e.message)})
+	con.close()
+	return json.dumps({"code": 0, "response": response})

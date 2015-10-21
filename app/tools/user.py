@@ -95,6 +95,20 @@ def listFollowers(con, email, optional):
 
 	return response
 
+def listFollowing(con, email, optional):
+	query = "SELECT follower FROM follower WHERE followee = \'" + str(email[0]) + "\'"
+
+	try:
+		followees = dbConnector.select_query(con, query, ())[0]
+	except Exception as e:
+		print (e.message)
+
+	response = []
+	for followee in followees:
+		response.append(details(con, str(followee)))
+
+	return response
+
 def user_description(user):
 	user = user[0]
 	response = {
