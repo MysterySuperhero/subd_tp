@@ -81,6 +81,20 @@ def updateProfile(con, about, user, name):
 	return details(con, user)
 
 
+def listFollowers(con, email, optional):
+	query = "SELECT followee FROM follower WHERE follower = \'" + str(email[0]) + "\'"
+
+	try:
+		followers = dbConnector.select_query(con, query, ())[0]
+	except Exception as e:
+		print (e.message)
+
+	response = []
+	for follower in followers:
+		response.append(details(con, str(follower)))
+
+	return response
+
 def user_description(user):
 	user = user[0]
 	response = {
