@@ -68,7 +68,7 @@ def forum_list_threads():
 	related = helpers.related_exists(params)
 	try:
 		helpers.check_params(params, ["forum"])
-		response = thread.list(con, optional=optional, required=params, related=related)
+		response = thread.list(con=con, optional=optional, required=params, related=related)
 	except Exception, e:
 		con.close;
 		return json.dumps({"code": 3, "response": (e.message)})
@@ -78,4 +78,14 @@ def forum_list_threads():
 
 @app.route('/db/api/forum/listUsers/', methods=['GET'])
 def forum_list_users():
-	return
+	con = dbConnector.connect()
+	params = helpers.json_from_get(request)
+	optional = helpers.get_optional_params(params, ["since_id", "limit", "order"])
+	try:
+		helpers.check_params(params, ["forum"])
+		response = forum.forum_listUsers(con=con, optional=optional, forum_shortname=params["forum"][0])
+	except Exception, e:
+		con.close;
+		return json.dumps({"code": 3, "response": (e.message)})
+	con.close();
+	return json.dumps({"code": 0, "response": response});

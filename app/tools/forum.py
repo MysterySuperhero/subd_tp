@@ -30,6 +30,28 @@ def details(con, short_name, related):
 		forum["user"] = user.details(con, forum["user"])
 	return forum
 
+def forum_listUsers(con, forum_shortname, optional):
+	print "______LAST MAFAKA_______"
+	query = "SELECT user FROM post WHERE forum = \'" + str(forum_shortname) + "\' GROUP BY user" 
+	print query
+
+	try:
+		posts = dbConnector.select_query(con, query, ())
+	except Exception as e:
+		print (e.message)
+
+	print posts
+
+	response = []
+	for post in posts:
+		print str(post)
+		res = user.details(con, str(post[0]))
+		print res
+		response.append(res)
+	# query = "SELECT about, email, id, isAnonymous, name, username FROM user"
+	print response
+
+	return response
 
 def forum_description(forum):
     

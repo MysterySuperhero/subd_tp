@@ -130,7 +130,6 @@ def listFollowing(con, email, optional):
 
 
 def listPosts(con, email, optional):
-	print "AAAAAAAAAAAAAAAAAAAAAAAAA___________________________"
 	query = "SELECT date, dislikes, forum, id, isApproved, isDeleted, isEdited, isHighlighted, isSpam, likes, message, parent, points, thread, user FROM post WHERE user = \'" + str(email[0]) + "\'"
 	print query
 
@@ -143,8 +142,6 @@ def listPosts(con, email, optional):
 	if 'limit' in optional:
 		query += " LIMIT " + "".join(optional["limit"][0])
 
-	print "________POSTS RESULT___________"
-	print query
 	try:
 		posts = dbConnector.select_query(con, query, ())
 	except Exception as e:
