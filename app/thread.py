@@ -199,3 +199,28 @@ def list_posts():
         return json.dumps({"code": 1, "response": (e.message)})
     con.close()
     return json.dumps({"code": 0, "response": response})
+
+
+@app.route("/db/api/thread/list/", methods=["GET"])
+def list_thread():
+
+    con = dbConnector.connect()
+
+    params = helpers.json_from_get(request)
+
+    optional = helpers.get_optional_params(request=params, values=["since", "limit", "order"])
+
+    
+    # helpers.check_params(params, ["user"])
+    # helpers.check_params(params, ["forum"])
+
+    try:
+        response = thread.list(con=con, required=params, optional=optional)
+    except Exception as e:
+        con.close()
+        return json.dumps({"code": 1, "response": (e.message)})
+
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+    return

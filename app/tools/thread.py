@@ -79,8 +79,6 @@ def vote(con, vote, thread):
 
 def update(con, message, slug, thread):
     query = "UPDATE thread SET slug = " + "\'" + str(slug) + "\'" + ", message = " + "\'" + str(message) + "\'" + " WHERE id = " + str(thread);
-    print "___ATTENTION___"
-    print query
     try:
         dbConnector.update_query(con, query, ())
     except Exception as e:
@@ -134,20 +132,16 @@ def open_close(con, thread, isClosed):
     return response
 
 def restore_remove(con, thread, isDeleted):
-    print "___ATTENTION___"
 
     posts = 0
     if isDeleted == 0:
         query = "SELECT COUNT(id) FROM post WHERE thread = " + str(thread)
         print query
         posts = dbConnector.select_query(con, query, ())[0][0]
-    print posts
 
     query_thread = "UPDATE thread SET isDeleted = " + str(isDeleted) + ", posts = " + str(posts) + " WHERE id = " + str(thread)
     query_post = "UPDATE post SET isDeleted = " + str(isDeleted) + " WHERE thread = " + str(thread)
 
-    print query_thread
-    print query_post
     try:
         dbConnector.update_query(con, query_thread, ())
         dbConnector.update_query(con, query_post, ())
@@ -172,3 +166,49 @@ def dec_posts(con,post):
     query = "UPDATE thread SET posts = posts - 1 WHERE id = " + str(thread)
     dbConnector.update_query(con, query, ())
     return
+
+def list(con, required, optional):
+
+
+    query = "SELECT date, dislikes, forum, id, isClosed, isDeleted, likes, message, points, posts, slug, title, user FROM thread WHERE "
+
+    if "forum" in required:
+        query += "forum = " + "\'" + str(required["forum"][0]) + "\'"
+    if "user" in required:
+        query += "user = " + "\'" + str(required["user"][0]) + "\'"
+    
+    print "___ATTENTION___"
+    print optional
+    
+    since = optional["since"][0]
+    order = optional["order"][0]
+
+
+    if 'since' in optional:
+        print "SINCE"
+        since = optional["since"][0]
+        query += " AND date >= " + "\'" + str(since) + "\'"
+        print query
+
+    if 'order' in optional:
+        print "ORDER"
+        order = optional["order"][0]
+        query += " ORDER BY date " + "".join(optional["order"])
+        print query
+        
+    if 'limit' in optional:
+        print "LIMIT"
+        limit = optional["limit"][0]
+        query += " LIMIT " + "".join(optional["limit"])
+        print query
+
+    print query
+
+    try:
+        response = dbConnector.select_query(con, query, ())
+    except Exception as e:
+        print (e.message)
+
+    print response
+       
+    return response
