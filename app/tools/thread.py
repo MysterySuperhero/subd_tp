@@ -172,43 +172,48 @@ def list(con, required, optional):
 
     query = "SELECT date, dislikes, forum, id, isClosed, isDeleted, likes, message, points, posts, slug, title, user FROM thread WHERE "
 
+
     if "forum" in required:
         query += "forum = " + "\'" + str(required["forum"][0]) + "\'"
     if "user" in required:
         query += "user = " + "\'" + str(required["user"][0]) + "\'"
     
-    print "___ATTENTION___"
-    print optional
-    
-    since = optional["since"][0]
-    order = optional["order"][0]
-
 
     if 'since' in optional:
-        print "SINCE"
         since = optional["since"][0]
         query += " AND date >= " + "\'" + str(since) + "\'"
-        print query
 
     if 'order' in optional:
-        print "ORDER"
         order = optional["order"][0]
         query += " ORDER BY date " + "".join(optional["order"])
-        print query
         
     if 'limit' in optional:
-        print "LIMIT"
         limit = optional["limit"][0]
         query += " LIMIT " + "".join(optional["limit"])
-        print query
-
-    print query
 
     try:
         response = dbConnector.select_query(con, query, ())
     except Exception as e:
         print (e.message)
 
-    print response
+    if response != ():
+        response = response[0]
+        response = {
+            'date': str(response[0]),
+            'dislikes': response[1],
+            'forum': response[2],
+            'id': response[3],
+            'isClosed': bool(response[4]),
+            'isDeleted': bool(response[5]),
+            'likes': response[6],
+            'message': response[7],
+            'points': response[8],
+            'posts': response[9],
+            'slug': response[10],
+            'title': response[11],
+            'user': response[1],
+        }
+
+    # response[1] = str(response[1])
        
     return response

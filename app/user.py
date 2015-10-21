@@ -45,3 +45,34 @@ def user_details():
 	con.close()
 	return json.dumps({"code": 0, "response": userr})
 
+@app.route('/db/api/user/follow/', methods=['POST'])
+def user_follow():
+
+	con = dbConnector.connect()
+	params = request.json
+
+	try:
+		helpers.check_params(params, ["follower", "followee"])
+		response = user.follow(con=con, follower_email=params["follower"], followee_email=params["followee"])
+	except Exception as e:
+		con.close()
+		return json.dumps({"code": 1, "response": (e.message)})
+
+	con.close()
+	return json.dumps({"code": 0, "response": response})
+
+@app.route('/db/api/user/unfollow/', methods=['POST'])
+def user_unfollow():
+	con = dbConnector.connect()
+	params = request.json
+
+	try:
+		helpers.check_params(params, ["follower", "followee"])
+		response = user.unfollow(con=con, follower_email=params["follower"], followee_email=params["followee"])
+	except Exception as e:
+		con.close()
+		return json.dumps({"code": 1, "response": (e.message)})
+		
+	con.close()
+	return json.dumps({"code": 0, "response": response})
+

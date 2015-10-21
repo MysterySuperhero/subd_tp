@@ -57,6 +57,25 @@ def details(con, email):
 
 	return user
 
+def follow(con, follower_email, followee_email):
+	print "___ATTENTION___"
+	query = "INSERT INTO follower (follower, followee) VALUES (\'" + str(follower_email) + "\', \'" + str(followee_email) + "\')"
+	print query
+
+	dbConnector.update_query(con, query, ())
+
+	return details(con, follower_email)
+
+def unfollow(con, follower_email, followee_email):
+	print "___ATTENTION2___"
+	query = "DELETE FROM follower WHERE follower = \'" + str(follower_email) + "\' AND " + "followee = \'" + str(followee_email)  + "\'"
+	print query
+
+	dbConnector.update_query(con, query, ())
+	
+	return details(con, follower_email)
+
+
 def user_description(user):
 	user = user[0]
 	response = {
