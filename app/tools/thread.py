@@ -87,15 +87,14 @@ def update(con, message, slug, thread):
 
 
 def subscribe(con, user, thread):
-
-    query = "INSERT INTO subscription (thread, user) VALUES (" + str(thread) + "," + str(user) + ")"
+    query = "INSERT INTO subscription (thread, user) VALUES (\'" + str(thread) + "\',\'" + str(user) + "\')"
 
     try:
-        dbConnector.update_query(con, update_query, ())
+        dbConnector.update_query(con, query, ())
     except Exception as e:
         print (e.message)
 
-    query = "SELECT thread, user FROM subscription WHERE thread = " + str(thread) + ", " + "user = " + str(user)
+    query = "SELECT thread, user FROM subscription WHERE thread = \'" + str(thread) + "\', " + "user = \'" + str(user) + "\'"
 
     try:
         sub = dbConnector.select_query(con, query, ()) 
@@ -107,9 +106,11 @@ def subscribe(con, user, thread):
     return result
 
 
-# TODO: refactor exceptions raiser Exception(e.message) ???
+# TODO: refactor exceptions raise Exception(e.message) ???
 def unsubscribe(con, user, thread):
-    query = "DELETE FROM subscription WHERE thread = " + str(thread) + " AND user = " + str(user)
+    print "_______UNSUBSCRIBE________"
+    query = "DELETE FROM subscription WHERE thread = \'" + str(thread) + "\' AND user = \'" + str(user) + "\'"
+    print query
 
     try:
         dbConnector.update_query(con, query, ())
@@ -173,9 +174,9 @@ def list(con, required, optional):
     query = "SELECT date, dislikes, forum, id, isClosed, isDeleted, likes, message, points, posts, slug, title, user FROM thread WHERE "
 
 
-    if "forum" in required:
+    if 'forum' in required:
         query += "forum = " + "\'" + str(required["forum"][0]) + "\'"
-    if "user" in required:
+    if 'user' in required:
         query += "user = " + "\'" + str(required["user"][0]) + "\'"
     
 
@@ -196,8 +197,6 @@ def list(con, required, optional):
     except Exception as e:
         print (e.message)
 
-    print "___AAZAZAZAZ____"
-    print response
     if response != ():
         response = response[0]
         response = {
@@ -215,5 +214,6 @@ def list(con, required, optional):
             'title': response[11],
             'user': response[12]
         }
+    print response
        
     return response

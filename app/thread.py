@@ -210,10 +210,6 @@ def list_thread():
 
     optional = helpers.get_optional_params(request=params, values=["since", "limit", "order"])
 
-    
-    # helpers.check_params(params, ["user"])
-    # helpers.check_params(params, ["forum"])
-
     try:
         response = thread.list(con=con, required=params, optional=optional)
     except Exception as e:

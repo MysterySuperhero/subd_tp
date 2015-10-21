@@ -58,25 +58,26 @@ def details(con, email):
 	return user
 
 def follow(con, follower_email, followee_email):
-	print "___ATTENTION___"
 	query = "INSERT INTO follower (follower, followee) VALUES (\'" + str(follower_email) + "\', \'" + str(followee_email) + "\')"
-	print query
 
 	dbConnector.update_query(con, query, ())
 
 	return details(con, follower_email)
 
 def unfollow(con, follower_email, followee_email):
-	print "___ATTENTION2___"
 	query = "DELETE FROM follower WHERE follower = \'" + str(follower_email) + "\' AND " + "followee = \'" + str(followee_email)  + "\'"
-	print query
 
 	dbConnector.update_query(con, query, ())
 
 	return details(con, follower_email)
 
-def update_profile(con, about, user, name):
-
+def updateProfile(con, about, user, name):
+	query = "UPDATE user SET about = \'" + str(about) + "\', email = \'" + str(user) + "\', name = \'" + str(name) + "\' WHERE email = \'" + str(user) + "\'"
+	try:
+		dbConnector.update_query(con, query, ())
+	except Exception as e:
+		print (e.message)
+	print details(con, user)
 	return details(con, user)
 
 

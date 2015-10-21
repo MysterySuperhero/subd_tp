@@ -7,13 +7,13 @@ info: Let there be users.
 
 info: Requesting http://localhost:5000/db/api/user/create/ with {'username': 'user1', 'about': 'hello im user1', 'isAnonymous': False, 'name': 'John', 'email': 'example@mail.ru'} (POST)
 
-info: Request time was: 0.0625 sec
+info: Request time was: 0.0735 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
 
-info: Request time was: 0.0125 sec
+info: Request time was: 0.0126 sec
 
 info: Requesting http://localhost:5000/db/api/user/create/ with {'username': None, 'about': None, 'isAnonymous': True, 'name': None, 'email': 'richard.nixon@example.com'} (POST)
 
@@ -23,317 +23,345 @@ info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'richard.nixon@example.com'} (GET)
 
-info: Request time was: 0.0092 sec
+info: Request time was: 0.0094 sec
 
 info: Requesting http://localhost:5000/db/api/user/create/ with {'username': 'user2', 'about': 'hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2', 'isAnonymous': False, 'name': 'Jey', 'email': 'example2@mail.ru'} (POST)
 
-info: Request time was: 0.1017 sec
+info: Request time was: 0.1020 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example2@mail.ru'} (GET)
 
-info: Request time was: 0.0096 sec
+info: Request time was: 0.0095 sec
 
 info: Requesting http://localhost:5000/db/api/user/create/ with {'username': 'user3', 'about': 'hello im user3', 'isAnonymous': False, 'name': 'Josh', 'email': 'example3@mail.ru'} (POST)
 
-info: Request time was: 0.1009 sec
+info: Request time was: 0.1011 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
 
-info: Request time was: 0.0096 sec
+info: Request time was: 0.0094 sec
 
 info: Requesting http://localhost:5000/db/api/user/create/ with {'username': 'user4', 'about': 'hello im user4', 'isAnonymous': False, 'name': 'Jim', 'email': 'example4@mail.ru'} (POST)
 
-info: Request time was: 0.0673 sec
+info: Request time was: 0.0679 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example4@mail.ru'} (GET)
 
-info: Request time was: 0.0097 sec
+info: Request time was: 0.0095 sec
 
 info: Let there be content
 
-info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': 'Forum With Sufficiently Large Name', 'short_name': 'forumwithsufficientlylargename', 'user': 'example4@mail.ru'} (POST)
+info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': 'Forum With Sufficiently Large Name', 'short_name': 'forumwithsufficientlylargename', 'user': 'example2@mail.ru'} (POST)
 
-info: Request time was: 0.0557 sec
+info: Request time was: 0.0674 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/forum/details/ with {'related': ['user'], 'forum': 'forumwithsufficientlylargename'} (GET)
 
-info: Request time was: 0.0102 sec
+info: Request time was: 0.0092 sec
 
 info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': 'Forum I', 'short_name': 'forum1', 'user': 'example2@mail.ru'} (POST)
 
-info: Request time was: 0.0554 sec
+info: Request time was: 0.0680 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/forum/details/ with {'related': ['user'], 'forum': 'forum1'} (GET)
 
-info: Request time was: 0.0100 sec
+info: Request time was: 0.0099 sec
 
-info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': 'Forum II', 'short_name': 'forum2', 'user': 'richard.nixon@example.com'} (POST)
+info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': 'Forum II', 'short_name': 'forum2', 'user': 'example2@mail.ru'} (POST)
 
-info: Request time was: 0.0556 sec
+info: Request time was: 0.0671 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/forum/details/ with {'related': ['user'], 'forum': 'forum2'} (GET)
 
-info: Request time was: 0.0106 sec
+info: Request time was: 0.0100 sec
 
-info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': u'\u0424\u043e\u0440\u0443\u043c \u0422\u0440\u0438', 'short_name': 'forum3', 'user': 'richard.nixon@example.com'} (POST)
+info: Requesting http://localhost:5000/db/api/forum/create/ with {'name': u'\u0424\u043e\u0440\u0443\u043c \u0422\u0440\u0438', 'short_name': 'forum3', 'user': 'example@mail.ru'} (POST)
 
-info: Request time was: 0.0557 sec
+info: Request time was: 0.0674 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/forum/details/ with {'related': ['user'], 'forum': 'forum3'} (GET)
 
-info: Request time was: 0.0108 sec
+info: Request time was: 0.0102 sec
 
-info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forumwithsufficientlylargename', 'title': 'Thread With Sufficiently Large Title', 'isClosed': True, 'user': 'example3@mail.ru', 'date': '2014-01-01 00:00:01', 'message': 'hey hey hey hey!', 'slug': 'Threadwithsufficientlylargetitle', 'isDeleted': True} (POST)
+info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forumwithsufficientlylargename', 'title': 'Thread With Sufficiently Large Title', 'isClosed': True, 'user': 'example2@mail.ru', 'date': '2014-01-01 00:00:01', 'message': 'hey hey hey hey!', 'slug': 'Threadwithsufficientlylargetitle', 'isDeleted': True} (POST)
 
-info: Request time was: 0.0665 sec
+info: Request time was: 0.0671 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['forum', 'user'], 'thread': 1} (GET)
 
-info: Request time was: 0.0110 sec
+info: Request time was: 0.0108 sec
 
-info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forum1', 'title': 'Thread I', 'isClosed': False, 'user': 'richard.nixon@example.com', 'date': '2013-12-31 00:01:01', 'message': 'hey!', 'slug': 'thread1', 'isDeleted': False} (POST)
+info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forum2', 'title': 'Thread I', 'isClosed': False, 'user': 'example3@mail.ru', 'date': '2013-12-31 00:01:01', 'message': 'hey!', 'slug': 'thread1', 'isDeleted': False} (POST)
 
-info: Request time was: 0.0656 sec
+info: Request time was: 0.0770 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['forum', 'user'], 'thread': 2} (GET)
 
-info: Request time was: 0.0102 sec
+info: Request time was: 0.0105 sec
 
-info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forum2', 'title': 'Thread II', 'isClosed': False, 'user': 'example4@mail.ru', 'date': '2013-12-30 00:01:01', 'message': 'hey hey!', 'slug': 'thread2', 'isDeleted': False} (POST)
+info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forumwithsufficientlylargename', 'title': 'Thread II', 'isClosed': False, 'user': 'example2@mail.ru', 'date': '2013-12-30 00:01:01', 'message': 'hey hey!', 'slug': 'thread2', 'isDeleted': False} (POST)
 
-info: Request time was: 0.1290 sec
+info: Request time was: 0.0999 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['forum', 'user'], 'thread': 3} (GET)
 
-info: Request time was: 0.0096 sec
+info: Request time was: 0.0114 sec
 
 info: Requesting http://localhost:5000/db/api/thread/create/ with {'forum': 'forum1', 'title': u'\u0422\u0440\u0435\u0434 \u0422\u0440\u0438', 'isClosed': False, 'user': 'example2@mail.ru', 'date': '2013-12-29 00:01:01', 'message': 'hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! ', 'slug': 'thread3', 'isDeleted': False} (POST)
 
-info: Request time was: 0.1072 sec
+info: Request time was: 0.0986 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['forum', 'user'], 'thread': 4} (GET)
 
-info: Request time was: 0.0108 sec
+info: Request time was: 0.0113 sec
 
-info: Requesting http://localhost:5000/db/api/post/create/ with {'isApproved': True, 'user': 'example@mail.ru', 'date': '2014-01-01 00:00:01', 'message': 'my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1', 'isSpam': False, 'isHighlighted': True, 'thread': 2, 'forum': 'forum1', 'isDeleted': False, 'isEdited': True} (POST)
+info: Requesting http://localhost:5000/db/api/post/create/ with {'isApproved': True, 'user': 'example3@mail.ru', 'date': '2014-01-01 00:00:01', 'message': 'my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1', 'isSpam': False, 'isHighlighted': True, 'thread': 1, 'forum': 'forumwithsufficientlylargename', 'isDeleted': False, 'isEdited': True} (POST)
 
-info: Request time was: 0.0702 sec
+info: Request time was: 0.0649 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 1, 'related': ['thread', 'forum', 'user']} (GET)
 
-info: Request time was: 0.0109 sec
+info: Request time was: 0.0118 sec
 
-info: Requesting http://localhost:5000/db/api/post/create/ with {'parent': 1, 'isApproved': False, 'user': 'example2@mail.ru', 'date': '2014-01-01 00:02:01', 'message': 'my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3', 'isSpam': False, 'isHighlighted': False, 'forum': 'forum1', 'thread': 2, 'isDeleted': False, 'isEdited': True} (POST)
+info: Requesting http://localhost:5000/db/api/post/create/ with {'parent': 1, 'isApproved': False, 'user': 'example3@mail.ru', 'date': '2014-01-01 00:02:01', 'message': 'my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3', 'isSpam': False, 'isHighlighted': False, 'forum': 'forumwithsufficientlylargename', 'thread': 1, 'isDeleted': False, 'isEdited': True} (POST)
 
-info: Request time was: 0.0726 sec
+info: Request time was: 0.0661 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 2, 'related': ['thread', 'forum', 'user']} (GET)
 
-info: Request time was: 0.0118 sec
+info: Request time was: 0.0112 sec
 
-info: Requesting http://localhost:5000/db/api/post/create/ with {'forum': 'forum1', 'thread': 2, 'parent': 2, 'isApproved': False, 'isDeleted': False, 'isEdited': True, 'date': '2014-01-02 00:02:01', 'message': 'my message 1', 'isSpam': True, 'isHighlighted': False, 'user': 'example@mail.ru'} (POST)
+info: Requesting http://localhost:5000/db/api/post/create/ with {'forum': 'forumwithsufficientlylargename', 'thread': 1, 'parent': 2, 'isApproved': False, 'isDeleted': False, 'isEdited': True, 'date': '2014-01-02 00:02:01', 'message': 'my message 1', 'isSpam': True, 'isHighlighted': False, 'user': 'richard.nixon@example.com'} (POST)
 
-info: Request time was: 0.0638 sec
+info: Request time was: 0.0634 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 3, 'related': ['thread', 'forum', 'user']} (GET)
 
-info: Request time was: 0.0111 sec
+info: Request time was: 0.0116 sec
 
-info: Requesting http://localhost:5000/db/api/post/create/ with {'forum': 'forumwithsufficientlylargename', 'thread': 1, 'isApproved': True, 'isDeleted': False, 'isEdited': False, 'date': '2014-01-03 00:01:01', 'message': 'my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1', 'isSpam': False, 'isHighlighted': False, 'user': 'example4@mail.ru'} (POST)
+info: Requesting http://localhost:5000/db/api/post/create/ with {'forum': 'forum1', 'thread': 4, 'isApproved': True, 'isDeleted': False, 'isEdited': False, 'date': '2014-01-03 00:01:01', 'message': 'my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1my message 1', 'isSpam': False, 'isHighlighted': False, 'user': 'example2@mail.ru'} (POST)
 
-info: Request time was: 0.0654 sec
+info: Request time was: 0.0759 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 4, 'related': ['thread', 'forum', 'user']} (GET)
 
-info: Request time was: 0.0113 sec
+info: Request time was: 0.0132 sec
 
-info: Requesting http://localhost:5000/db/api/post/create/ with {'forum': 'forum1', 'thread': 4, 'isApproved': False, 'isDeleted': False, 'isEdited': False, 'date': '2014-01-03 00:08:01', 'message': 'my message 1', 'isSpam': False, 'isHighlighted': False, 'user': 'example4@mail.ru'} (POST)
+info: Requesting http://localhost:5000/db/api/post/create/ with {'forum': 'forum2', 'thread': 2, 'isApproved': False, 'isDeleted': False, 'isEdited': False, 'date': '2014-01-03 00:08:01', 'message': 'my message 1', 'isSpam': False, 'isHighlighted': False, 'user': 'richard.nixon@example.com'} (POST)
 
-info: Request time was: 0.0654 sec
+info: Request time was: 0.0626 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 5, 'related': ['thread', 'forum', 'user']} (GET)
 
-info: Request time was: 0.0114 sec
+info: Request time was: 0.0115 sec
 
 info: Requesting http://localhost:5000/db/api/post/details/ with {'post': -42} (GET)
 
-info: Request time was: 0.0076 sec
+info: Request time was: 0.0079 sec
 
 info: Requesting http://localhost:5000/db/api/user/create/ with {'username': None, 'about': None, 'isAnonymous': True, 'name': None, 'email': 'richard.nixon@example.com'} (POST)
 
-info: Request time was: 0.0670 sec
+info: Request time was: 0.0661 sec
 
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['user', 'thread'], 'thread': 4} (GET)
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'related': ['user', 'thread'], 'thread': 1} (GET)
 
-info: Request time was: 0.0079 sec
+info: Request time was: 0.0074 sec
 
 info: List posts
 
 info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'forum': 'forumwithsufficientlylargename'} (GET)
 
-info: Request time was: 0.0087 sec
+info: Request time was: 0.0084 sec
 
 info: Validating by requesting list of objects
 
 info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'forum': 'forum1'} (GET)
 
-info: Request time was: 0.0094 sec
+info: Request time was: 0.0075 sec
 
 info: Validating by requesting list of objects
 
-info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'thread': 2} (GET)
-
-info: Request time was: 0.0085 sec
-
-info: Validating by requesting list of objects
-
-info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'order': 'desc', 'thread': 2} (GET)
-
-info: Request time was: 0.0068 sec
-
-info: Validating by requesting list of objects
-
-info: Remove post
-
-info: Requesting http://localhost:5000/db/api/post/remove/ with {'post': 2} (POST)
-
-info: Request time was: 0.1255 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 2} (GET)
-
-info: Request time was: 0.0089 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 2} (GET)
-
-info: Request time was: 0.0086 sec
-
-info: Restore post
-
-info: Requesting http://localhost:5000/db/api/post/restore/ with {'post': 2} (POST)
-
-info: Request time was: 0.1264 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 2} (GET)
-
-info: Request time was: 0.0087 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 2} (GET)
+info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'thread': 4} (GET)
 
 info: Request time was: 0.0082 sec
 
-info: Update post
-
-info: Requesting http://localhost:5000/db/api/post/update/ with {'post': 2, 'message': 'my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3my message 3'} (POST)
-
-info: Request time was: 0.0065 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 2} (GET)
-
-info: Request time was: 0.0078 sec
-
-info: Likes time!!!
-
-info: Requesting http://localhost:5000/db/api/post/vote/ with {'vote': -1, 'post': 3} (POST)
-
-info: Request time was: 0.1220 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 3} (GET)
-
-info: Request time was: 0.0082 sec
-
-info: List some threads
-
-info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'forum': 'forumwithsufficientlylargename'} (GET)
-
-info: Request time was: 0.0090 sec
-
 info: Validating by requesting list of objects
 
-info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'forum': 'forum1'} (GET)
-
-info: Request time was: 0.0078 sec
-
-info: Validating by requesting list of objects
-
-info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-01 00:00:00', 'user': 'example2@mail.ru', 'order': 'desc'} (GET)
-
-info: Request time was: 0.0074 sec
-
-info: Validating by requesting list of objects
-
-info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'user': 'example3@mail.ru', 'order': 'desc'} (GET)
-
-info: Request time was: 0.0071 sec
-
-info: Validating by requesting list of objects
-
-info: And list posts in them
-
-info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'thread': 4} (GET)
-
-info: Request time was: 0.0074 sec
-
-info: Validating by requesting list of objects
-
-info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'thread': 1} (GET)
+info: Requesting http://localhost:5000/db/api/post/list/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'order': 'desc', 'thread': 3} (GET)
 
 info: Request time was: 0.0077 sec
 
 info: Validating by requesting list of objects
 
-info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'thread': 1} (GET)
+info: Remove post
 
-info: Request time was: 0.0082 sec
+info: Requesting http://localhost:5000/db/api/post/remove/ with {'post': 5} (POST)
+
+info: Request time was: 0.1177 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 5} (GET)
+
+info: Request time was: 0.0079 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 2} (GET)
+
+info: Request time was: 0.0076 sec
+
+info: Restore post
+
+info: Requesting http://localhost:5000/db/api/post/restore/ with {'post': 5} (POST)
+
+info: Request time was: 0.1173 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 5} (GET)
+
+info: Request time was: 0.0081 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 2} (GET)
+
+info: Request time was: 0.0080 sec
+
+info: Update post
+
+info: Requesting http://localhost:5000/db/api/post/update/ with {'post': 5, 'message': 'my message 1'} (POST)
+
+info: Request time was: 0.0063 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 5} (GET)
+
+info: Request time was: 0.0076 sec
+
+info: Likes time!!!
+
+info: Requesting http://localhost:5000/db/api/post/vote/ with {'vote': -1, 'post': 4} (POST)
+
+info: Request time was: 0.0792 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/post/details/ with {'post': 4} (GET)
+
+info: Request time was: 0.0080 sec
+
+info: List some threads
+
+info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'forum': 'forumwithsufficientlylargename'} (GET)
+
+info: Request time was: 0.0094 sec
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'forum': 'forum1'} (GET)
+
+info: Request time was: 0.0087 sec
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-01 00:00:00', 'user': 'example2@mail.ru', 'order': 'desc'} (GET)
+
+info: Request time was: 0.0092 sec
+
+error: Cannot create <Thread> object from response. Response: forum
+
+error: Cannot create <Thread> object from response. Response: title
+
+error: Cannot create <Thread> object from response. Response: posts
+
+error: Cannot create <Thread> object from response. Response: dislikes
+
+error: Cannot create <Thread> object from response. Response: slug
+
+error: Cannot create <Thread> object from response. Response: isClosed
+
+error: Cannot create <Thread> object from response. Response: points
+
+error: Cannot create <Thread> object from response. Response: likes
+
+error: Cannot create <Thread> object from response. Response: date
+
+error: Cannot create <Thread> object from response. Response: message
+
+error: Cannot create <Thread> object from response. Response: id
+
+error: Cannot create <Thread> object from response. Response: isDeleted
+
+error: Cannot create <Thread> object from response. Response: user
+
+info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 13 != 1
+
+info: Requesting http://localhost:5000/db/api/thread/list/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'user': 'example3@mail.ru', 'order': 'desc'} (GET)
+
+info: Request time was: 0.0075 sec
+
+info: Validating by requesting list of objects
+
+info: And list posts in them
+
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'thread': 1} (GET)
+
+info: Request time was: 0.0078 sec
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'thread': 2} (GET)
+
+info: Request time was: 0.0080 sec
+
+info: Validating by requesting list of objects
+
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'thread': 3} (GET)
+
+info: Request time was: 0.0072 sec
 
 info: Validating by requesting list of objects
 
 info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'order': 'desc', 'thread': 2} (GET)
 
-info: Request time was: 0.0075 sec
+info: Request time was: 0.0070 sec
 
 info: Validating by requesting list of objects
 
@@ -341,43 +369,7 @@ info: Go away thread!
 
 info: Requesting http://localhost:5000/db/api/thread/remove/ with {'thread': 4} (POST)
 
-info: Request time was: 0.1220 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4} (GET)
-
-info: Request time was: 0.0072 sec
-
-info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'order': 'desc', 'thread': 4} (GET)
-
-info: Request time was: 0.0080 sec
-
-info: Validating by requesting list of objects
-
-info: Alright, I forgive you, come back
-
-info: Requesting http://localhost:5000/db/api/thread/restore/ with {'thread': 4} (POST)
-
-info: Request time was: 0.1729 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4} (GET)
-
-info: Request time was: 0.0082 sec
-
-info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'order': 'desc', 'thread': 4} (GET)
-
-info: Request time was: 0.0093 sec
-
-info: Validating by requesting list of objects
-
-info: Changed my mind again, goodbye!
-
-info: Requesting http://localhost:5000/db/api/thread/close/ with {'thread': 4} (POST)
-
-info: Request time was: 0.0749 sec
+info: Request time was: 0.1192 sec
 
 info: Validating by requesting object details
 
@@ -385,11 +377,17 @@ info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4}
 
 info: Request time was: 0.0081 sec
 
-info: But I cant live without you
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'order': 'desc', 'thread': 4} (GET)
 
-info: Requesting http://localhost:5000/db/api/thread/open/ with {'thread': 4} (POST)
+info: Request time was: 0.0089 sec
 
-info: Request time was: 0.0649 sec
+info: Validating by requesting list of objects
+
+info: Alright, I forgive you, come back
+
+info: Requesting http://localhost:5000/db/api/thread/restore/ with {'thread': 4} (POST)
+
+info: Request time was: 0.1270 sec
 
 info: Validating by requesting object details
 
@@ -397,11 +395,95 @@ info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4}
 
 info: Request time was: 0.0083 sec
 
+info: Requesting http://localhost:5000/db/api/thread/listPosts/ with {'order': 'desc', 'thread': 4} (GET)
+
+info: Request time was: 0.0102 sec
+
+info: Validating by requesting list of objects
+
+info: Changed my mind again, goodbye!
+
+info: Requesting http://localhost:5000/db/api/thread/close/ with {'thread': 4} (POST)
+
+info: Request time was: 0.0618 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4} (GET)
+
+info: Request time was: 0.0085 sec
+
+info: But I cant live without you
+
+info: Requesting http://localhost:5000/db/api/thread/open/ with {'thread': 4} (POST)
+
+info: Request time was: 0.0647 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4} (GET)
+
+info: Request time was: 0.0079 sec
+
 info: Update post
 
 info: Requesting http://localhost:5000/db/api/thread/update/ with {'message': 'hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! hey hey hey! ', 'slug': 'newslug', 'thread': 4} (POST)
 
-info: Request time was: 0.0696 sec
+info: Request time was: 0.0631 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4} (GET)
+
+info: Request time was: 0.0080 sec
+
+info: Likes time...again!
+
+info: Requesting http://localhost:5000/db/api/thread/vote/ with {'vote': -1, 'thread': 1} (POST)
+
+info: Request time was: 0.0645 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 1} (GET)
+
+info: Request time was: 0.0092 sec
+
+info: Subscribe me
+
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example2@mail.ru', 'thread': 4} (POST)
+
+info: Request time was: 0.0682 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4} (GET)
+
+info: Request time was: 0.0083 sec
+
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example3@mail.ru', 'thread': 3} (POST)
+
+info: Request time was: 0.0915 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 3} (GET)
+
+info: Request time was: 0.0084 sec
+
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example2@mail.ru', 'thread': 1} (POST)
+
+info: Request time was: 0.1019 sec
+
+info: Validating by requesting object details
+
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 1} (GET)
+
+info: Request time was: 0.0082 sec
+
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example@mail.ru', 'thread': 4} (POST)
+
+info: Request time was: 0.1358 sec
 
 info: Validating by requesting object details
 
@@ -409,81 +491,27 @@ info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4}
 
 info: Request time was: 0.0082 sec
 
-info: Likes time...again!
+info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'richard.nixon@example.com', 'thread': 2} (POST)
 
-info: Requesting http://localhost:5000/db/api/thread/vote/ with {'vote': -1, 'thread': 1} (POST)
-
-info: Request time was: 0.0677 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 1} (GET)
-
-info: Request time was: 0.0077 sec
-
-info: Subscribe me
-
-info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example4@mail.ru', 'thread': 3} (POST)
-
-info: Request time was: 0.0073 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 3} (GET)
-
-info: Request time was: 0.0076 sec
-
-info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example2@mail.ru', 'thread': 2} (POST)
-
-info: Request time was: 0.0060 sec
+info: Request time was: 0.0692 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 2} (GET)
 
-info: Request time was: 0.0071 sec
-
-info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example4@mail.ru', 'thread': 1} (POST)
-
-info: Request time was: 0.0056 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 1} (GET)
-
-info: Request time was: 0.0071 sec
-
-info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example4@mail.ru', 'thread': 2} (POST)
-
-info: Request time was: 0.0059 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 2} (GET)
-
-info: Request time was: 0.0067 sec
-
-info: Requesting http://localhost:5000/db/api/thread/subscribe/ with {'user': 'example2@mail.ru', 'thread': 4} (POST)
-
-info: Request time was: 0.0052 sec
-
-info: Validating by requesting object details
-
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 4} (GET)
-
-info: Request time was: 0.0063 sec
+info: Request time was: 0.0085 sec
 
 info: Unsubscribe me
 
-info: Requesting http://localhost:5000/db/api/thread/unsubscribe/ with {'user': 'example3@mail.ru', 'thread': 3} (POST)
+info: Requesting http://localhost:5000/db/api/thread/unsubscribe/ with {'user': 'example3@mail.ru', 'thread': 2} (POST)
 
-info: Request time was: 0.0050 sec
+info: Request time was: 0.0077 sec
 
 info: Validating by requesting object details
 
-info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 3} (GET)
+info: Requesting http://localhost:5000/db/api/thread/details/ with {'thread': 2} (GET)
 
-info: Request time was: 0.0059 sec
+info: Request time was: 0.0079 sec
 
 info: OMG, I was soooooo wasted...what did I wrote yesterday?
 
@@ -493,13 +521,13 @@ error: Request error: Request http://localhost:5000/db/api/user/listPosts/?since
 
 info: Validating by requesting list of objects
 
-error: len(api objects list) != len(test object list): 0 != 1
-
 info: Requesting http://localhost:5000/db/api/user/listPosts/ with {'since': '2014-01-01 00:00:00', 'user': 'richard.nixon@example.com', 'order': 'desc'} (GET)
 
 error: Request error: Request http://localhost:5000/db/api/user/listPosts/?since=2014-01-01+00%3A00%3A00&user=richard.nixon%40example.com&order=desc return code not 2xx: 404
 
 info: Validating by requesting list of objects
+
+error: len(api objects list) != len(test object list): 0 != 2
 
 info: Requesting http://localhost:5000/db/api/user/listPosts/ with {'since': '2014-01-01 00:00:00', 'user': 'example2@mail.ru', 'order': 'asc'} (GET)
 
@@ -519,81 +547,57 @@ info: It was huge mistake. Need to change a nick quickly
 
 info: Requesting http://localhost:5000/db/api/user/updateProfile/ with {'about': 'Wowowowow', 'user': 'example2@mail.ru', 'name': 'NewName'} (POST)
 
-error: Request error: Request http://localhost:5000/db/api/user/updateProfile/ return code not 2xx: 404
+info: Request time was: 0.0682 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example2@mail.ru'} (GET)
 
-info: Request time was: 0.0078 sec
-
-info: REQUIRED: {'username': 'user2', 'about': 'Wowowowow', 'name': 'NewName', 'subscriptions': [2, 4], 'email': 'example2@mail.ru', 'followers': [], 'following': [], 'isAnonymous': False, 'id': 3}
-
-info: RESPONSE: {'username': u'user2', 'about': u'hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2', 'name': u'Jey', 'subscriptions': [], 'email': u'example2@mail.ru', 'followers': [], 'following': [], 'isAnonymous': False, 'id': 3}
-
-error: Attribute <about> from API response (value=u'hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2hello im user2') dont match test object (value='Wowowowow')
+info: Request time was: 0.0090 sec
 
 info: Requesting http://localhost:5000/db/api/user/updateProfile/ with {'about': 'Wowowowow!!!', 'user': 'example3@mail.ru', 'name': 'NewName2'} (POST)
 
-error: Request error: Request http://localhost:5000/db/api/user/updateProfile/ return code not 2xx: 404
+info: Request time was: 0.0694 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
 
-info: Request time was: 0.0067 sec
-
-info: REQUIRED: {'username': 'user3', 'about': 'Wowowowow!!!', 'name': 'NewName2', 'subscriptions': [], 'email': 'example3@mail.ru', 'followers': [], 'following': [], 'isAnonymous': False, 'id': 4}
-
-info: RESPONSE: {'username': u'user3', 'about': u'hello im user3', 'name': u'Josh', 'subscriptions': [], 'email': u'example3@mail.ru', 'followers': [], 'following': [], 'isAnonymous': False, 'id': 4}
-
-error: Attribute <about> from API response (value=u'hello im user3') dont match test object (value='Wowowowow!!!')
+info: Request time was: 0.0148 sec
 
 info: Follow someone
 
 info: Requesting http://localhost:5000/db/api/user/follow/ with {'follower': 'example3@mail.ru', 'followee': 'example@mail.ru'} (POST)
 
-info: Request time was: 0.0655 sec
+info: Request time was: 0.0641 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
 
-info: Request time was: 0.0082 sec
-
-info: REQUIRED: {'username': 'user3', 'about': 'Wowowowow!!!', 'name': 'NewName2', 'subscriptions': [], 'email': 'example3@mail.ru', 'followers': [], 'following': ['example@mail.ru'], 'isAnonymous': False, 'id': 4}
-
-info: RESPONSE: {'username': u'user3', 'about': u'hello im user3', 'name': u'Josh', 'subscriptions': [], 'email': u'example3@mail.ru', 'followers': [], 'following': [u'example@mail.ru'], 'isAnonymous': False, 'id': 4}
-
-error: Attribute <about> from API response (value=u'hello im user3') dont match test object (value='Wowowowow!!!')
+info: Request time was: 0.0094 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
 
-info: Request time was: 0.0085 sec
+info: Request time was: 0.0100 sec
 
 info: Requesting http://localhost:5000/db/api/user/follow/ with {'follower': 'example@mail.ru', 'followee': 'example3@mail.ru'} (POST)
 
-info: Request time was: 0.0722 sec
+info: Request time was: 0.0669 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
 
-info: Request time was: 0.0097 sec
+info: Request time was: 0.0093 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
 
-info: Request time was: 0.0095 sec
-
-info: REQUIRED: {'username': 'user3', 'about': 'Wowowowow!!!', 'name': 'NewName2', 'subscriptions': [], 'email': 'example3@mail.ru', 'followers': ['example@mail.ru'], 'following': ['example@mail.ru'], 'isAnonymous': False, 'id': 4}
-
-info: RESPONSE: {'username': u'user3', 'about': u'hello im user3', 'name': u'Josh', 'subscriptions': [], 'email': u'example3@mail.ru', 'followers': [u'example@mail.ru'], 'following': [u'example@mail.ru'], 'isAnonymous': False, 'id': 4}
-
-error: Attribute <about> from API response (value=u'hello im user3') dont match test object (value='Wowowowow!!!')
+info: Request time was: 0.0104 sec
 
 info: List followers
 
@@ -635,71 +639,59 @@ info: Unfollow someone
 
 info: Requesting http://localhost:5000/db/api/user/unfollow/ with {'follower': 'example3@mail.ru', 'followee': 'example@mail.ru'} (POST)
 
-info: Request time was: 0.0694 sec
+info: Request time was: 0.0684 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
 
-info: Request time was: 0.0087 sec
-
-info: REQUIRED: {'username': 'user3', 'about': 'Wowowowow!!!', 'name': 'NewName2', 'subscriptions': [], 'email': 'example3@mail.ru', 'followers': ['example@mail.ru'], 'following': [], 'isAnonymous': False, 'id': 4}
-
-info: RESPONSE: {'username': u'user3', 'about': u'hello im user3', 'name': u'Josh', 'subscriptions': [], 'email': u'example3@mail.ru', 'followers': [u'example@mail.ru'], 'following': [], 'isAnonymous': False, 'id': 4}
-
-error: Attribute <about> from API response (value=u'hello im user3') dont match test object (value='Wowowowow!!!')
+info: Request time was: 0.0090 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
 
-info: Request time was: 0.0101 sec
+info: Request time was: 0.0108 sec
 
 info: Requesting http://localhost:5000/db/api/user/unfollow/ with {'follower': 'example@mail.ru', 'followee': 'example3@mail.ru'} (POST)
 
-info: Request time was: 0.0910 sec
+info: Request time was: 0.0897 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example@mail.ru'} (GET)
 
-info: Request time was: 0.0094 sec
+info: Request time was: 0.0096 sec
 
 info: Validating by requesting object details
 
 info: Requesting http://localhost:5000/db/api/user/details/ with {'user': 'example3@mail.ru'} (GET)
 
-info: Request time was: 0.0093 sec
-
-info: REQUIRED: {'username': 'user3', 'about': 'Wowowowow!!!', 'name': 'NewName2', 'subscriptions': [], 'email': 'example3@mail.ru', 'followers': [], 'following': [], 'isAnonymous': False, 'id': 4}
-
-info: RESPONSE: {'username': u'user3', 'about': u'hello im user3', 'name': u'Josh', 'subscriptions': [], 'email': u'example3@mail.ru', 'followers': [], 'following': [], 'isAnonymous': False, 'id': 4}
-
-error: Attribute <about> from API response (value=u'hello im user3') dont match test object (value='Wowowowow!!!')
+info: Request time was: 0.0089 sec
 
 info: List forum posts
 
 info: Requesting http://localhost:5000/db/api/forum/listPosts/ with {'related': ['thread'], 'since': '2014-01-02 00:00:00', 'limit': 2, 'order': 'asc', 'forum': 'forumwithsufficientlylargename'} (GET)
 
-info: Request time was: 0.0090 sec
+info: Request time was: 0.0104 sec
 
 info: Validating by requesting list of objects
 
 info: Requesting http://localhost:5000/db/api/forum/listPosts/ with {'related': ['thread', 'forum'], 'since': '2014-01-01 00:00:00', 'order': 'desc', 'forum': 'forum1'} (GET)
 
-info: Request time was: 0.0128 sec
+info: Request time was: 0.0097 sec
 
 info: Validating by requesting list of objects
 
 info: Requesting http://localhost:5000/db/api/forum/listPosts/ with {'since': '2014-01-01 00:00:00', 'order': 'desc', 'forum': 'forum2'} (GET)
 
-info: Request time was: 0.0074 sec
+info: Request time was: 0.0080 sec
 
 info: Validating by requesting list of objects
 
 info: Requesting http://localhost:5000/db/api/forum/listPosts/ with {'since': '2014-01-03 00:00:00', 'limit': 3, 'order': 'desc', 'forum': 'forum3'} (GET)
 
-info: Request time was: 0.0070 sec
+info: Request time was: 0.0082 sec
 
 info: Validating by requesting list of objects
 
@@ -711,7 +703,7 @@ error: Request error: Request http://localhost:5000/db/api/forum/listThreads/?fo
 
 info: Validating by requesting list of objects
 
-error: len(api objects list) != len(test object list): 0 != 1
+error: len(api objects list) != len(test object list): 0 != 2
 
 info: List forum users
 
@@ -721,7 +713,7 @@ error: Request error: Request http://localhost:5000/db/api/forum/listUsers/?limi
 
 info: Validating by requesting list of objects
 
-error: len(api objects list) != len(test object list): 0 != 1
+error: len(api objects list) != len(test object list): 0 != 2
 
 info: Requesting http://localhost:5000/db/api/forum/listUsers/ with {'order': 'desc', 'forum': 'forum1'} (GET)
 
@@ -729,7 +721,7 @@ error: Request error: Request http://localhost:5000/db/api/forum/listUsers/?orde
 
 info: Validating by requesting list of objects
 
-error: len(api objects list) != len(test object list): 0 != 3
+error: len(api objects list) != len(test object list): 0 != 1
 
 {'clear': True,
  'errors': True,
@@ -745,7 +737,7 @@ error: len(api objects list) != len(test object list): 0 != 3
  'post/vote': True,
  'thread/close': True,
  'thread/create': True,
- 'thread/list': True,
+ 'thread/list': False,
  'thread/listPosts': True,
  'thread/open': True,
  'thread/remove': True,
@@ -755,10 +747,10 @@ error: len(api objects list) != len(test object list): 0 != 3
  'thread/update': True,
  'thread/vote': True,
  'user/create': True,
- 'user/follow': False,
+ 'user/follow': True,
  'user/listFollowers': False,
  'user/listFollowing': False,
  'user/listPosts': False,
- 'user/unfollow': False,
- 'user/updateProfile': False}
-22/30 tests passed
+ 'user/unfollow': True,
+ 'user/updateProfile': True}
+24/30 tests passed
