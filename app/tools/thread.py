@@ -196,6 +196,8 @@ def list(con, required, optional):
     except Exception as e:
         print (e.message)
 
+    print "___AAZAZAZAZ____"
+    print response
     if response != ():
         response = response[0]
         response = {
@@ -211,9 +213,7 @@ def list(con, required, optional):
             'posts': response[9],
             'slug': response[10],
             'title': response[11],
-            'user': response[1],
+            'user': response[12]
         }
-
-    # response[1] = str(response[1])
        
     return response

@@ -72,8 +72,12 @@ def unfollow(con, follower_email, followee_email):
 	print query
 
 	dbConnector.update_query(con, query, ())
-	
+
 	return details(con, follower_email)
+
+def update_profile(con, about, user, name):
+
+	return details(con, user)
 
 
 def user_description(user):
