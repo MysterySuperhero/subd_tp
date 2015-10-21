@@ -1,7 +1,7 @@
 from app import app
 from flask import jsonify, request
 from constants import *
-from app.tools import forum, post
+from app.tools import forum, post, thread
 from app.tools import dbConnector
 import urlparse
 from app.tools import helpers
@@ -59,3 +59,23 @@ def forum_list_posts():
 		return json.dumps({"code": 3, "response": (e.message)})
 	con.close();
 	return json.dumps({"code": 0, "response": response});
+
+@app.route('/db/api/forum/listThreads/', methods=['GET'])
+def forum_list_threads():
+	con = dbConnector.connect()
+	params = helpers.json_from_get(request)
+	optional = helpers.get_optional_params(params, ["since", "limit", "order"])
+	related = helpers.related_exists(params)
+	try:
+		helpers.check_params(params, ["forum"])
+		response = thread.list(con, optional=optional, required=params, related=related)
+	except Exception, e:
+		con.close;
+		return json.dumps({"code": 3, "response": (e.message)})
+	con.close();
+	return json.dumps({"code": 0, "response": response});
+
+
+@app.route('/db/api/forum/listUsers/', methods=['GET'])
+def forum_list_users():
+	return

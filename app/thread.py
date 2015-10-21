@@ -211,7 +211,7 @@ def list_thread():
     optional = helpers.get_optional_params(request=params, values=["since", "limit", "order"])
 
     try:
-        response = thread.list(con=con, required=params, optional=optional)
+        response = thread.list(con=con, required=params, optional=optional, related=[])
     except Exception as e:
         con.close()
         return json.dumps({"code": 1, "response": (e.message)})

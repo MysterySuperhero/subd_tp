@@ -108,9 +108,7 @@ def subscribe(con, user, thread):
 
 # TODO: refactor exceptions raise Exception(e.message) ???
 def unsubscribe(con, user, thread):
-    print "_______UNSUBSCRIBE________"
     query = "DELETE FROM subscription WHERE thread = \'" + str(thread) + "\' AND user = \'" + str(user) + "\'"
-    print query
 
     try:
         dbConnector.update_query(con, query, ())
@@ -168,8 +166,7 @@ def dec_posts(con,post):
     dbConnector.update_query(con, query, ())
     return
 
-def list(con, required, optional):
-
+def list(con, required, optional, related):
 
     query = "SELECT date, dislikes, forum, id, isClosed, isDeleted, likes, message, points, posts, slug, title, user FROM thread WHERE "
 
@@ -193,27 +190,32 @@ def list(con, required, optional):
         query += " LIMIT " + "".join(optional["limit"])
 
     try:
-        response = dbConnector.select_query(con, query, ())
+        threads = dbConnector.select_query(con, query, ())
     except Exception as e:
         print (e.message)
 
-    if response != ():
-        response = response[0]
-        response = {
-            'date': str(response[0]),
-            'dislikes': response[1],
-            'forum': response[2],
-            'id': response[3],
-            'isClosed': bool(response[4]),
-            'isDeleted': bool(response[5]),
-            'likes': response[6],
-            'message': response[7],
-            'points': response[8],
-            'posts': response[9],
-            'slug': response[10],
-            'title': response[11],
-            'user': response[12]
-        }
-    print response
-       
+    response = []
+    if threads != ():
+        for k in threads:
+            k = {
+                'date': str(k[0]),#.strftime("%Y-%m-%d %H:%M:%S"),
+                'dislikes': k[1],
+                'forum': k[2],
+                'id': k[3],
+                'isClosed': bool(k[4]),
+                'isDeleted': bool(k[5]),
+                'likes': k[6],
+                'message': k[7],
+                'points': k[8],
+                'posts': k[9],
+                'slug': k[10],
+                'title': k[11],
+                'user': k[12]
+            }
+            if "user" in related:
+                k["user"] = user.details(con, k["user"])
+            if "forum" in related:
+                k["forum"] = forum.details(con=con, short_name=k["forum"], related=[])
+            response.append(k)
+
     return response

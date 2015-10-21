@@ -84,6 +84,16 @@ def updateProfile(con, about, user, name):
 def listFollowers(con, email, optional):
 	query = "SELECT followee FROM follower WHERE follower = \'" + str(email[0]) + "\'"
 
+	if 'since_id' in optional:
+		query += " AND id >= " + optional['since_id'][0]
+
+	if 'order' in optional:
+		query += " ORDER BY followee " + "".join(optional["order"][0])
+
+	if 'limit' in optional:
+		query += " LIMIT " + "".join(optional["limit"][0])
+
+
 	try:
 		followers = dbConnector.select_query(con, query, ())[0]
 	except Exception as e:
@@ -98,6 +108,15 @@ def listFollowers(con, email, optional):
 def listFollowing(con, email, optional):
 	query = "SELECT follower FROM follower WHERE followee = \'" + str(email[0]) + "\'"
 
+	if 'since_id' in optional:
+		query += " AND id >= " + optional['since_id'][0]
+
+	if 'order' in optional:
+		query += " ORDER BY follower " + "".join(optional["order"][0])
+
+	if 'limit' in optional:
+		query += " LIMIT " + "".join(optional["limit"][0])
+
 	try:
 		followees = dbConnector.select_query(con, query, ())[0]
 	except Exception as e:
@@ -109,15 +128,65 @@ def listFollowing(con, email, optional):
 
 	return response
 
+
+def listPosts(con, email, optional):
+	print "AAAAAAAAAAAAAAAAAAAAAAAAA___________________________"
+	query = "SELECT date, dislikes, forum, id, isApproved, isDeleted, isEdited, isHighlighted, isSpam, likes, message, parent, points, thread, user FROM post WHERE user = \'" + str(email[0]) + "\'"
+	print query
+
+	if 'since' in optional:
+		query += " AND date >= " + "\'" +  optional['since'][0] + "\'"
+
+	if 'order' in optional:
+		query += " ORDER BY date " + "".join(optional["order"][0])
+
+	if 'limit' in optional:
+		query += " LIMIT " + "".join(optional["limit"][0])
+
+	print "________POSTS RESULT___________"
+	print query
+	try:
+		posts = dbConnector.select_query(con, query, ())
+	except Exception as e:
+		print (e.message)
+
+	if posts != ():
+		print "TYPE"
+		print type(posts[0])
+		print posts
+		posts = posts[0]
+		posts = {
+			'date': posts[0].strftime("%Y-%m-%d %H:%M:%S"),
+			'dislikes': posts[1],
+			'forum': posts[2],
+			'id': posts[3],
+			'isApproved': posts[4],
+			'isDeleted': posts[5],
+			'isEdited': posts[6],
+			'isHighlighted': posts[7],
+			'isSpam': posts[8],
+			'likes': posts[9],
+			'message': posts[10],
+			'parent': posts[11],
+			'points': posts[12],
+			'thread': posts[13],
+			'user': posts[14]
+		}
+	print "____POSTS MAFAKA_____"
+	print posts
+
+	return posts
+
+
 def user_description(user):
 	user = user[0]
 	response = {
 		'about': user[2],
-        'email': user[1],
-        'id': user[0],
-        'isAnonymous': bool(user[3]),
-        'name': user[4],
-        'username': user[5]
+		'email': user[1],
+		'id': user[0],
+		'isAnonymous': bool(user[3]),
+		'name': user[4],
+		'username': user[5]
 	}
 	return response
 

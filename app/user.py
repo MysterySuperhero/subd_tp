@@ -1,7 +1,7 @@
 from app import app
 from flask import jsonify, request
 from constants import *
-from app.tools import user
+from app.tools import user, post
 from app.tools import dbConnector
 import urlparse
 from app.tools import helpers
@@ -109,6 +109,7 @@ def user_listFollowers():
 	con.close()
 	return json.dumps({"code": 0, "response": response})
 
+
 @app.route('/db/api/user/listFollowing/', methods=['GET'])
 def user_listFollowing():
 
@@ -121,6 +122,26 @@ def user_listFollowing():
 	try:
 		helpers.check_params(params, ["user"])
 		response = user.listFollowing(con, params["user"], optional)
+	except Exception as e:
+		con.close()
+		return json.dumps({"code": 1, "response": (e.message)})
+	con.close()
+	return json.dumps({"code": 0, "response": response})
+
+
+@app.route('/db/api/user/listPosts/', methods=['GET'])
+def user_listPosts():
+
+	con = dbConnector.connect()
+
+	params = helpers.json_from_get(request)
+
+	optional = helpers.get_optional_params(params, ["limit", "order", "since"])
+
+	try:
+		helpers.check_params(params, ["user"])
+		# response = us er.listPosts(con, params["user"], optional)
+		response = post.posts_list(con=con, entity="user", params=optional, identifier=params["user"], related=[])
 	except Exception as e:
 		con.close()
 		return json.dumps({"code": 1, "response": (e.message)})
