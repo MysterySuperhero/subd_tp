@@ -65,9 +65,9 @@ def details(con, id, related):
 
 def vote(con, vote, thread):
     if vote == -1:
-        query = "UPDATE thread SET dislikes = dislikes + 1, points = points - 1 where id = " + str(thread)
+        query = "UPDATE thread SET dislikes = dislikes + 1, points = points - 1 WHERE id = " + str(thread)
     else:
-        query = "UPDATE thread SET likes = likes + 1, points = points + 1 where id = " + str(thread)
+        query = "UPDATE thread SET likes = likes + 1, points = points + 1 WHERE id = " + str(thread)
     
     try:
         dbConnector.update_query(con, query, ())
@@ -78,12 +78,14 @@ def vote(con, vote, thread):
 
 
 def update(con, message, slug, thread):
-    query = "UPDATE thread SET slug = " + str(slug) + ", message = " + str(message) + " WHERE id = " + str(thread);
+    query = "UPDATE thread SET slug = " + "\'" + str(slug) + "\'" + ", message = " + "\'" + str(message) + "\'" + " WHERE id = " + str(thread);
+    print "___ATTENTION___"
+    print query
     try:
         dbConnector.update_query(con, query, ())
     except Exception as e:
         print(e.message)
-    return details(con, thread = id, related=[])
+    return details(con, id=thread, related=[])
 
 
 def subscribe(con, user, thread):
@@ -155,3 +157,18 @@ def restore_remove(con, thread, isDeleted):
     response = {"thread": thread }
 
     return response
+
+
+def inc_posts(con, post):
+    query = "SELECT thread FROM post WHERE id = " + str(post)
+    thread = dbConnector.select_query(con, query, ())[0][0]
+    query = "UPDATE thread SET posts = posts + 1 WHERE id = " + str(thread)
+    dbConnector.update_query(con, query, ())
+    return
+
+def dec_posts(con,post):
+    query = "SELECT thread FROM post WHERE id = " + str(post)
+    thread = dbConnector.select_query(con, query, ())[0][0]
+    query = "UPDATE thread SET posts = posts - 1 WHERE id = " + str(thread)
+    dbConnector.update_query(con, query, ())
+    return

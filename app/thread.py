@@ -1,7 +1,7 @@
 from app import app
 from flask import request
 from constants import *
-from app.tools import thread
+from app.tools import thread, post
 from app.tools import dbConnector
 import urlparse
 from app.tools import helpers
@@ -76,7 +76,7 @@ def update_thread():
         response = thread.update(con=con, message=params["message"], slug=params["slug"], thread=params["thread"])
     except Exception as e:
         con.close()
-        return json.dumps({"code":1, "response": (e.message)})
+        return json.dumps({"code": 1, "response": (e.message)})
 
     return json.dumps({"code": 0, "response": response})
 
@@ -181,5 +181,21 @@ def remove_thread():
         con.close()
         return ({"code": 1, "response": (e.message)})
 
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+
+@app.route("/db/api/thread/listPosts/", methods=["GET"])
+def list_posts():
+    con = dbConnector.connect()
+    params = helpers.json_from_get(request)
+    entity = "thread"
+    optional = helpers.get_optional_params(request=params, values=["limit", "order", "since", "sort"])
+    try:
+        helpers.check_params(params, ["thread"])
+        response = post.posts_list(con=con, entity="thread", params=optional, identifier=params["thread"], related=[])
+    except Exception as e:
+        con.close()
+        return json.dumps({"code": 1, "response": (e.message)})
     con.close()
     return json.dumps({"code": 0, "response": response})

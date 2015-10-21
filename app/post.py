@@ -1,7 +1,7 @@
 from app import app
 from flask import request
 from constants import *
-from app.tools import post
+from app.tools import post, thread
 from app.tools import dbConnector
 import urlparse
 from app.tools import helpers
@@ -81,3 +81,58 @@ def post_list():
         return json.dumps({"code": 1, "response": (e.message)})
     con.close()
     return json.dumps({"code": 0, "response": p_list})
+
+@app.route("/db/api/post/update/", methods=["POST"])
+def post_update():
+    con = dbConnector.connect()
+    params = request.json
+    try:
+        helpers.check_params(params, ["post", "message"])
+        response = post.update(con=con, post=params["post"], message=params["message"])
+    except Exception as e:
+        con.close()
+        return json.dumps({"code": 1, "response": (e.message)})
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+
+@app.route("/db/api/post/vote/", methods=["POST"])
+def post_vote():
+    con = dbConnector.connect()
+    params = request.json
+    try:
+        helpers.check_params(params, ["post", "vote"])
+        response = post.vote(con=con, post=params["post"], vote=params["vote"])
+    except Exception as e:
+        con.close()
+        return json.dumps({"code": 1, "response": (e.message)})
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+@app.route("/db/api/post/remove/", methods=["POST"])
+def post_remove():
+    con = dbConnector.connect()
+    params = request.json
+    try:
+        helpers.check_params(params, ["post"])
+        response = post.restore_remove(con=con, post=params["post"], isDeleted=1)
+        thread.dec_posts(con, params["post"])
+    except Exception as e:
+        con.close()
+        return json.dumps({"code": 1, "response": (e.message)})
+    con.close()
+    return json.dumps({"code": 0, "response": response})
+
+@app.route("/db/api/post/restore/", methods=["POST"])
+def post_restore():
+    con = dbConnector.connect()
+    params = request.json
+    try:
+        helpers.check_params(params, ["post"])
+        response = post.restore_remove(con=con, post=params["post"], isDeleted=0)
+        thread.inc_posts(con, params["post"])
+    except Exception as e:
+        con.close()
+        return json.dumps({"code": 1, "response": (e.message)})
+    con.close()
+    return json.dumps({"code": 0, "response": response})

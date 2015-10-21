@@ -93,6 +93,30 @@ def posts_list(con, entity, params, identifier, related=[]):
     return post_list
 
 
+def vote(con, vote, post):
+    if vote == 1:
+        query = "UPDATE post SET likes = likes + 1, points = points + 1 WHERE id = " + str(post)
+    else:
+        query = "UPDATE post SET dislikes = dislikes + 1, points = points - 1 WHERE id = " + str(post)
+
+    dbConnector.update_query(con, query, ())
+
+    return
+
+def update(con, post, message):
+    query = "UPDATE post SET message = " + str(message) + " WHERE id = " + str(post)
+    dbConnector.update_query(con, query, ())
+    return details(connect,details_id=post, related=[])
+
+def restore_remove(con, post, isDeleted):
+
+    query = "UPDATE post SET isDeleted = " + str(isDeleted) + " WHERE id = " + str(post)
+
+    dbConnector.update_query(con, query, ())
+
+    response = {"post": post}
+    return response
+
 def post_query(con, id):
     post = dbConnector.select_query(
     	con,
