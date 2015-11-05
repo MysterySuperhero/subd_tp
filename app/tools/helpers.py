@@ -1,5 +1,5 @@
 import urlparse
-from flask import request
+
 
 def check_params(params, required_params):
 	for required_param in required_params:
@@ -12,13 +12,10 @@ def check_params(params, required_params):
 				continue
 	return
 
+
 def json_from_get(request):
 	parsed = urlparse.urlparse(request.url)
 	return urlparse.parse_qs(parsed.query)
-
-# def json_from_get(request):
-# 	return dict((k, v if len(v) > 1 else v[0] )
-#                     for k, v in urlparse.parse_qs(request.query_string).iteritems())
 
 
 def related_exists(request):
@@ -27,6 +24,7 @@ def related_exists(request):
 	except Exception:
 		related = []
 	return related
+
 
 def get_optional_params(request, values):
 	optional = dict([(k, request[k]) for k in set(values) if k in request])
