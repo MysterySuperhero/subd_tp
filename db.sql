@@ -14,9 +14,7 @@ CREATE TABLE IF NOT EXISTS `forumdb`.`user` (
   `about` TEXT NULL,
   `name` VARCHAR(30) NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY (`email`),
-  KEY name_email (name, email),
-  KEY email_name (email, name))
+  UNIQUE KEY (`email`))
 ENGINE = InnoDB;
 
 
@@ -54,10 +52,7 @@ CREATE TABLE IF NOT EXISTS `forumdb`.`thread` (
   `dislikes` INT UNSIGNED NOT NULL DEFAULT 0,
   `points` INT NOT NULL DEFAULT 0,
   `posts` INT NOT NULL DEFAULT 0,
-  PRIMARY KEY (`id`),
-  KEY user_date (`user`,`date`),
-  KEY (`slug`),
-  KEY forum_date (`forum`,`date`))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -82,11 +77,7 @@ CREATE TABLE IF NOT EXISTS `forumdb`.`post` (
   `likes` INT UNSIGNED NOT NULL DEFAULT 0,
   `dislikes` INT UNSIGNED NOT NULL DEFAULT 0,
   `points` INT NOT NULL DEFAULT 0,
-  PRIMARY KEY (`id`),
-  KEY `user_date` (`user`, `date`),
-  KEY `thread_date` (`thread`,`date`),
-  KEY `forum_user` (`forum`, `user`),
-  KEY `forum_date` (`forum`, `date`))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -113,8 +104,6 @@ CREATE TABLE IF NOT EXISTS `forumdb`.`follower` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `follower` VARCHAR(45) NOT NULL,
   `followee` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY(`follower`),
-  KEY(`followee`),
-  UNIQUE KEY `f_f` (`follower`, `followee`))
+  PRIMARY KEY (`id`))
+--  UNIQUE KEY `f_f` (`follower`, `followee`))
 ENGINE = InnoDB;
