@@ -7,26 +7,28 @@ def create(con, username, about, name, email, optional):
 		isAnonymous = optional["isAnonymous"]
 
 	user = dbConnector.update_query(
-		con, 
-		'INSERT INTO user (username, about, name, email, isAnonymous) VALUES (%s, %s, %s, %s, %s)', (username, about, name, email, isAnonymous, )
+		con,
+		'INSERT INTO user (username, about, name, email, isAnonymous) VALUES (%s, %s, %s, %s, %s)',
+		(username, about, name, email, isAnonymous,)
 	)
 
 	if user == "Error":
 		raise Exception("5")
 
-	#check insertion
+	# check insertion
 	user = dbConnector.select_query(
 		con,
 		'SELECT id, email, about, isAnonymous, name, username FROM user WHERE email = %s',
-                           (email, )
+		(email,)
 	)
 
 	return user_description(user)
 
+
 def details(con, email):
 	user = dbConnector.select_query(
 		con,
-		'SELECT id, email, about, isAnonymous, name, username FROM user WHERE email = %s LIMIT 1', (email, )
+		'SELECT id, email, about, isAnonymous, name, username FROM user WHERE email = %s LIMIT 1', (email,)
 	)
 
 	if len(user) == 0:
@@ -36,43 +38,49 @@ def details(con, email):
 
 	following = dbConnector.select_query(
 		con,
-		'SELECT followee FROM follower WHERE follower = %s', (email, )
+		'SELECT followee FROM follower WHERE follower = %s', (email,)
 	)
 
 	user["following"] = to_list(following)
-		
+
 	followers = dbConnector.select_query(
 		con,
-		'SELECT follower FROM follower WHERE followee = %s', (email, )
+		'SELECT follower FROM follower WHERE followee = %s', (email,)
 	)
 
 	user["followers"] = to_list(followers)
 
 	subscriptions = dbConnector.select_query(
 		con,
-		'SELECT thread FROM subscription WHERE user = %s', (email, )
+		'SELECT thread FROM subscription WHERE user = %s', (email,)
 	)
 
 	user["subscriptions"] = to_list(subscriptions)
 
 	return user
 
+
 def follow(con, follower_email, followee_email):
-	query = "INSERT INTO follower (follower, followee) VALUES (\'" + str(follower_email) + "\', \'" + str(followee_email) + "\')"
+	query = "INSERT INTO follower (follower, followee) VALUES (\'" + str(follower_email) + "\', \'" + str(
+		followee_email) + "\')"
 
 	dbConnector.update_query(con, query, ())
 
 	return details(con, follower_email)
+
 
 def unfollow(con, follower_email, followee_email):
-	query = "DELETE FROM follower WHERE follower = \'" + str(follower_email) + "\' AND " + "followee = \'" + str(followee_email)  + "\'"
+	query = "DELETE FROM follower WHERE follower = \'" + str(follower_email) + "\' AND " + "followee = \'" + str(
+		followee_email) + "\'"
 
 	dbConnector.update_query(con, query, ())
 
 	return details(con, follower_email)
 
+
 def updateProfile(con, about, user, name):
-	query = "UPDATE user SET about = \'" + str(about) + "\', email = \'" + str(user) + "\', name = \'" + str(name) + "\' WHERE email = \'" + str(user) + "\'"
+	query = "UPDATE user SET about = \'" + str(about) + "\', email = \'" + str(user) + "\', name = \'" + str(
+		name) + "\' WHERE email = \'" + str(user) + "\'"
 	try:
 		dbConnector.update_query(con, query, ())
 	except Exception as e:
@@ -82,6 +90,7 @@ def updateProfile(con, about, user, name):
 
 
 def listFollowers(con, email, optional):
+	global followers
 	query = "SELECT followee FROM follower WHERE follower = \'" + str(email[0]) + "\'"
 
 	if 'since_id' in optional:
@@ -93,7 +102,6 @@ def listFollowers(con, email, optional):
 	if 'limit' in optional:
 		query += " LIMIT " + "".join(optional["limit"][0])
 
-
 	try:
 		followers = dbConnector.select_query(con, query, ())[0]
 	except Exception as e:
@@ -104,6 +112,7 @@ def listFollowers(con, email, optional):
 		response.append(details(con, str(follower)))
 
 	return response
+
 
 def listFollowing(con, email, optional):
 	query = "SELECT follower FROM follower WHERE followee = \'" + str(email[0]) + "\'"
@@ -130,11 +139,11 @@ def listFollowing(con, email, optional):
 
 
 def listPosts(con, email, optional):
-	query = "SELECT date, dislikes, forum, id, isApproved, isDeleted, isEdited, isHighlighted, isSpam, likes, message, parent, points, thread, user FROM post WHERE user = \'" + str(email[0]) + "\'"
-	print query
+	query = "SELECT date, dislikes, forum, id, isApproved, isDeleted, isEdited, isHighlighted, isSpam, likes, message, parent, points, thread, user FROM post WHERE user = \'" + str(
+		email[0]) + "\'"
 
 	if 'since' in optional:
-		query += " AND date >= " + "\'" +  optional['since'][0] + "\'"
+		query += " AND date >= " + "\'" + optional['since'][0] + "\'"
 
 	if 'order' in optional:
 		query += " ORDER BY date " + "".join(optional["order"][0])
@@ -148,9 +157,6 @@ def listPosts(con, email, optional):
 		print (e.message)
 
 	if posts != ():
-		print "TYPE"
-		print type(posts[0])
-		print posts
 		posts = posts[0]
 		posts = {
 			'date': posts[0].strftime("%Y-%m-%d %H:%M:%S"),
@@ -169,8 +175,6 @@ def listPosts(con, email, optional):
 			'thread': posts[13],
 			'user': posts[14]
 		}
-	print "____POSTS MAFAKA_____"
-	print posts
 
 	return posts
 
@@ -187,9 +191,9 @@ def user_description(user):
 	}
 	return response
 
+
 def to_list(a):
 	lst = []
 	for i in a:
 		lst.append(i[0])
 	return lst
-

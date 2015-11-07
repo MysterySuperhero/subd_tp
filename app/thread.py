@@ -1,11 +1,10 @@
+import json
+
 from app import app
 from flask import request
-from constants import *
 from app.tools import thread, post
 from app.tools import dbConnector
-import urlparse
 from app.tools import helpers
-import json
 
 
 @app.route('/db/api/thread/create/', methods=['GET', 'POST'])

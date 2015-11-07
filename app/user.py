@@ -1,11 +1,10 @@
+import json
+
 from app import app
-from flask import jsonify, request
-from constants import *
+from flask import request
 from app.tools import user, post
 from app.tools import dbConnector
-import urlparse
 from app.tools import helpers
-import json
 
 
 @app.route('/db/api/user/create/', methods=['POST'])
@@ -140,7 +139,6 @@ def user_listPosts():
 
 	try:
 		helpers.check_params(params, ["user"])
-		# response = us er.listPosts(con, params["user"], optional)
 		response = post.posts_list(con=con, entity="user", params=optional, identifier=params["user"], related=[])
 	except Exception as e:
 		con.close()
