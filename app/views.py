@@ -7,7 +7,7 @@ from app.tools import dbConnector
 @app.route('/')
 @app.route('/index')
 def index():
-	return "test"
+	return "IT'S WORKING"
 
 
 @app.route('/lol')

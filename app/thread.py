@@ -1,4 +1,4 @@
-import json
+import simplejson as json
 
 from app import app
 from flask import request

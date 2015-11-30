@@ -1,1 +1,3 @@
 python func_test.py  -l --address=localhost:5000 > /home/dmitri/DB/subd-api/func_res
+
+python perf_test.py -l --address=127.0.0.1:5000
