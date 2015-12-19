@@ -186,25 +186,28 @@ def dec_posts(con, post):
 def list(con, required, optional, related):
 	query = "SELECT date, dislikes, forum, id, isClosed, isDeleted, likes, message, points, posts, slug, title, user FROM thread WHERE "
 
+	params = []
 	if 'forum' in required:
-		query += "forum = " + "\'" + str(required["forum"][0]) + "\'"
-	if 'user' in required:
-		query += "user = " + "\'" + str(required["user"][0]) + "\'"
+		query += "forum = %s "
+		params.append(required["forum"][0])
+	# query += "forum = " + "\'" + str(required["forum"][0]) + "\'"
+	else:
+		query += "user = %s "
+		params.append(required["user"][0])
+	# query += "user = " + "\'" + str(required["user"][0]) + "\'"
 
 	if 'since' in optional:
-		since = optional["since"][0]
-		query += " AND date >= " + "\'" + str(since) + "\'"
+		params.append(optional["since"][0])
+		query += " AND date >= %s "
 
 	if 'order' in optional:
-		order = optional["order"][0]
 		query += " ORDER BY date " + "".join(optional["order"])
 
 	if 'limit' in optional:
-		limit = optional["limit"][0]
 		query += " LIMIT " + "".join(optional["limit"])
 
 	try:
-		threads = dbConnector.select_query(con, query, ())
+		threads = dbConnector.select_query(con, query, params)
 	except Exception as e:
 		print (e.message)
 
