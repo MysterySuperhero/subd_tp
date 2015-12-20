@@ -1,0 +1,31 @@
+FOLLOWER
+	CREATE INDEX follower ON follower (follower)
+	CREATE INDEX followee ON follower (followee)
+
+FORUM
+	CREATE INDEX full_shortname ON forum (short_name, id, name, user);
+
+POST
+	CREATE INDEX forum_user ON post (forum, user);
+	CREATE INDEX user_date ON post (user, date);
+	CREATE INDEX forum_date ON post (forum, date);
+	CREATE INDEX thread_date ON post (thread, date);
+
+
+SUBSCRIPTION
+	CREATE INDEX user_thread ON subscription (user, thread);
+
+
+THREAD
+    CREATE INDEX forum_date ON thread (forum, date);
+	CREATE INDEX user_date ON thread (user, date);
+	CREATE INDEX slug ON thread (slug);
+	CREATE INDEX full_except_about ON thread (id, date, forum, isClosed, isDeleted, slug, title, user, dislikes, likes, points, posts);
+	CREATE INDEX user_full ON thread (user, date, dislikes, forum, id, isClosed, isDeleted, likes, points, posts, slug, title);
+	CREATE INDEX forum_full ON thread (forum, date, dislikes, id, isClosed, isDeleted, likes, points, posts, slug, title, user);
+
+USER
+	CREATE INDEX full_email_except_about ON user (email, id, isAnonymous, name, username);
+	CREATE INDEX email ON user (email);
+	CREATE INDEX name_email_id ON user (name, email, id);
+

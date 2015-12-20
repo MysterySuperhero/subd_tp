@@ -36,7 +36,7 @@ def create(con, forum, title, isClosed, user, date, message, slug, optional):
 def details(con, id, related):
 	thread = dbConnector.select_query(
 		con,
-		'SELECT date, forum, id, isClosed, isDeleted, message, slug, title, user, dislikes, likes, points, posts FROM thread WHERE id = %s;',
+		'SELECT date, forum, id, isClosed, isDeleted, message, slug, title, user, dislikes, likes, points, posts FROM thread  USE INDEX (full_except_about)  WHERE id = %s;',
 		(id,)
 	)
 
@@ -188,11 +188,11 @@ def list(con, required, optional, related):
 
 	params = []
 	if 'forum' in required:
-		query += "forum = %s "
+		query += "forum = %s USE INDEX (forum_full) "
 		params.append(required["forum"][0])
 	# query += "forum = " + "\'" + str(required["forum"][0]) + "\'"
 	else:
-		query += "user = %s "
+		query += "user = %s USE INDEX (user_full) "
 		params.append(required["user"][0])
 	# query += "user = " + "\'" + str(required["user"][0]) + "\'"
 

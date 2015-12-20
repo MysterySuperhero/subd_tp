@@ -28,7 +28,7 @@ def create(con, username, about, name, email, optional):
 def details(con, email):
 	user = dbConnector.select_query(
 		con,
-		'SELECT id, email, about, isAnonymous, name, username FROM user WHERE email = %s LIMIT 1', (email,)
+		'SELECT email, id, isAnonymous, name, username, about  FROM user WHERE email = %s LIMIT 1', (email,)
 	)
 
 	if len(user) == 0:
