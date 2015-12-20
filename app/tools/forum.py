@@ -34,7 +34,7 @@ def details(con, short_name, related):
 
 def forum_listUsers(con, forum_shortname, optional):
 	query = "SELECT user.id, user.name, user.email FROM user " \
-	        "WHERE user.email IN (SELECT DISTINCT user FROM post WHERE forum = \'" + str(forum_shortname) + "\')"
+	        "INNER JOIN post ON user.email = post.user  WHERE forum = \'" + str(forum_shortname) + "\')"
 	if "since_id" in optional:
 		query += " AND user.id >= " + str(optional["since_id"][0])
 	if "order" in optional:
@@ -53,6 +53,7 @@ def forum_listUsers(con, forum_shortname, optional):
 		response.append(res)
 
 	return response
+
 
 
 def forum_description(forum):

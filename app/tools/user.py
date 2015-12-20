@@ -90,7 +90,6 @@ def updateProfile(con, about, user, name):
 
 
 def listFollowers(con, email, optional):
-	global followers
 	query = "SELECT followee FROM follower WHERE follower = \'" + str(email[0]) + "\'"
 
 	if 'since_id' in optional:
